@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Dmitri Doroschuk. All rights reserved.
 //
 
+#import "ASHSpringyCollectionViewFlowLayout.h"
 #import "ArrayDataSource.h"
 #import "ArrayDelegate.h"
 #import "TCDPhotoCollectionViewCell.h"
@@ -36,6 +37,7 @@ static CGFloat const kDefaultCellHeight = 50;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Photo" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
     NSArray *dataSource = [NSArray arrayWithArray:[dict allValues]];
+    self.collectionView.collectionViewLayout = [ASHSpringyCollectionViewFlowLayout new];
     self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:dataSource cellIdentifier:@"Cell" configureCellBlock:^(TCDPhotoCollectionViewCell *cell, id item) {
         cell.imageView.image = [UIImage imageNamed:item];
     }];

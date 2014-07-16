@@ -33,6 +33,7 @@
 		30B5588519743E6B007C4F80 /* UIPhotoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5588319743E6B007C4F80 /* UIPhotoItemView.m */; };
 		30B5588A197441A1007C4F80 /* UIPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */; };
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
+		97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AEB10019766CD2008341DA /* TCDPhotoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		30B55888197441A1007C4F80 /* UIPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryViewController.h; sourceTree = "<group>"; };
 		30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryViewController.m; sourceTree = "<group>"; };
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoLayout.h; sourceTree = "<group>"; };
+		97AEB10019766CD2008341DA /* TCDPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
 				30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */,
+				97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */,
+				97AEB10019766CD2008341DA /* TCDPhotoLayout.m */,
 				30B558791972CA06007C4F80 /* Cells */,
 				30B558771972B6DF007C4F80 /* Photo.plist */,
 				30B5584419728683007C4F80 /* Images.xcassets */,
@@ -389,6 +394,7 @@
 				30B5588A197441A1007C4F80 /* UIPhotoGalleryViewController.m in Sources */,
 				30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */,
 				30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */,
+				97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */,
 				30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
