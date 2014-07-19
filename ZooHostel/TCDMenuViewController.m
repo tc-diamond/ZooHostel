@@ -10,6 +10,10 @@
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
 static NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
+static NSString * const kPhotoSegueIdentifier = @"SegueIdentifier";
+static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
+static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
+static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 static NSString * const kContactsSegueIdentifier = @"ContactsSegueIdentifier";
 static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 
@@ -35,8 +39,8 @@ static CGFloat const kTopImageViewHeight = 139.f;
 {
     [super viewDidLoad];
     
-    self.dataSource = @[@"Главная", @"Контакты", @"Фотографии"];
-    self.seguesSource = @[kMainSegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
+    self.dataSource = @[@"Главная", @"О нас", @"Виды путевок", @"Наша команда", @"Наши принципы", @"Условия приема", @"Контакты", @"Фотографии"];
+    self.seguesSource = @[kMainSegueIdentifier, nil, nil, nil, nil, nil, kContactsSegueIdentifier, kPhotoSegueIdentifier];
     
     self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     // Do any additional setup after loading the view.

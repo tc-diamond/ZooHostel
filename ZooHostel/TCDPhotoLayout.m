@@ -15,11 +15,11 @@
     return self.collectionView.bounds.size;
 }
 
-- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
-{
-    NSMutableArray *layoutAttributes = [NSMutableArray array];
-    
-    NSArray *visibleIndexPath = [self indexPaths]
-}
+//- (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
+//{
+//    NSMutableArray *layoutAttributes = [NSMutableArray array];
+//    
+////    NSArray *visibleIndexPath = [self indexPaths]
+//}
 
 @end
