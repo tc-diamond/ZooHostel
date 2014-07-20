@@ -7,15 +7,16 @@
 //
 
 #import "TCDMenuViewController.h"
+#import "TCDProgramTypesViewController.h"
+#import "TCDCrewViewController.h"
+#import "TCDMainViewController.h"
+#import "TCDAboutUsViewController.h"
+#import "TCDContactsViewController.h"
+#import "TCDPhotoViewController.h"
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
-static NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
-static NSString * const kPhotoSegueIdentifier = @"SegueIdentifier";
-static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
-static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
-static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
-static NSString * const kContactsSegueIdentifier = @"ContactsSegueIdentifier";
-static NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
+static NSString * const kPrincipesSegueIdentifier = @"PrincipesSegueIdentifier";
+static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
 
 static CGFloat const kTableViewYOrigin = 100.f;
 static CGFloat const kTopImageViewHeight = 139.f;
@@ -40,7 +41,7 @@ static CGFloat const kTopImageViewHeight = 139.f;
     [super viewDidLoad];
     
     self.dataSource = @[@"Главная", @"О нас", @"Виды путевок", @"Наша команда", @"Наши принципы", @"Условия приема", @"Контакты", @"Фотографии"];
-    self.seguesSource = @[kMainSegueIdentifier, nil, nil, nil, nil, nil, kContactsSegueIdentifier, kPhotoSegueIdentifier];
+    self.seguesSource = @[kMainSegueIdentifier, kAboutUsSegueIdentifier, kProgramTypesSegueIdentifier, kCrewSegueIdentifier, kPrincipesSegueIdentifier, kTermsSegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
     
     self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     // Do any additional setup after loading the view.
@@ -108,13 +109,8 @@ static CGFloat const kTopImageViewHeight = 139.f;
         return;
     }
     
-    if (scrollOffset < 0) {
-        // Adjust image proportionally
-        headerImageFrame.origin.y = self.headerImageYOffset - ((scrollOffset / 3));
-    } else {
-        // We're scrolling up, return to normal behavior
-        headerImageFrame.origin.y = self.headerImageYOffset - scrollOffset / 3;
-    }
+    // Adjust image proportionally
+    headerImageFrame.origin.y = self.headerImageYOffset - scrollOffset / 3;
     
     self.headerImageView.frame = headerImageFrame;
 }

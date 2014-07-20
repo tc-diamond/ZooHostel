@@ -32,6 +32,9 @@
 		30B5588419743E6B007C4F80 /* UIPhotoGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5588119743E6B007C4F80 /* UIPhotoGalleryView.m */; };
 		30B5588519743E6B007C4F80 /* UIPhotoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5588319743E6B007C4F80 /* UIPhotoItemView.m */; };
 		30B5588A197441A1007C4F80 /* UIPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */; };
+		30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */; };
+		30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */; };
+		30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */; };
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
 		97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AEB10019766CD2008341DA /* TCDPhotoLayout.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +91,12 @@
 		30B5588319743E6B007C4F80 /* UIPhotoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoItemView.m; sourceTree = "<group>"; };
 		30B55888197441A1007C4F80 /* UIPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryViewController.h; sourceTree = "<group>"; };
 		30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryViewController.m; sourceTree = "<group>"; };
+		30BC36A6197AD7560098F43F /* TCDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDAboutUsViewController.h; sourceTree = "<group>"; };
+		30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDAboutUsViewController.m; sourceTree = "<group>"; };
+		30BC36A9197AD8120098F43F /* TCDProgramTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDProgramTypesViewController.h; sourceTree = "<group>"; };
+		30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDProgramTypesViewController.m; sourceTree = "<group>"; };
+		30BC36AC197ADFAF0098F43F /* TCDCrewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDCrewViewController.h; sourceTree = "<group>"; };
+		30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDCrewViewController.m; sourceTree = "<group>"; };
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoLayout.h; sourceTree = "<group>"; };
 		97AEB10019766CD2008341DA /* TCDPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoLayout.m; sourceTree = "<group>"; };
@@ -164,6 +173,12 @@
 				30B5586219728B51007C4F80 /* TCDMenuViewController.m */,
 				30B5587D19732584007C4F80 /* TCDMainViewController.h */,
 				30B5587E19732584007C4F80 /* TCDMainViewController.m */,
+				30BC36A6197AD7560098F43F /* TCDAboutUsViewController.h */,
+				30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */,
+				30BC36A9197AD8120098F43F /* TCDProgramTypesViewController.h */,
+				30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */,
+				30BC36AC197ADFAF0098F43F /* TCDCrewViewController.h */,
+				30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */,
 				30B5586419728D48007C4F80 /* TCDContactsViewController.h */,
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
@@ -383,7 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */,
+				30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */,
 				30B5583D19728683007C4F80 /* TCDAppDelegate.m in Sources */,
+				30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */,
 				30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */,
 				30B5588419743E6B007C4F80 /* UIPhotoGalleryView.m in Sources */,
 				30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */,
@@ -396,6 +413,7 @@
 				30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */,
 				97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */,
 				30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */,
+				30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

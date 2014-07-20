@@ -16,6 +16,7 @@
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
 static CGFloat const kDefaultCellHeight = 50;
+NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 
 @interface TCDPhotoViewController () <UIPhotoGalleryDataSource>
 

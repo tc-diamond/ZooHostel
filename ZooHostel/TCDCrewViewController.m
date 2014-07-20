@@ -1,36 +1,37 @@
 //
-//  TCDMainViewController.m
+//  TCDCrewViewController.m
 //  ZooHostel
 //
-//  Created by Dmitri Doroschuk on 14.07.14.
+//  Created by Dmitri Doroschuk on 19.07.14.
 //  Copyright (c) 2014 Dmitri Doroschuk. All rights reserved.
 //
 
-#import "TCDMainViewController.h"
+#import "TCDCrewViewController.h"
 #import "UIViewController+SlidingSetup.h"
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
-NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
+NSString * const kCrewSegueIdentifier = @"CrewSegueIdentifier";
 
-@interface TCDMainViewController ()
+@interface TCDCrewViewController ()
 
 @end
 
-@implementation TCDMainViewController
+@implementation TCDCrewViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    [self slidingViewControllerSetup];
     // Do any additional setup after loading the view.
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)didReceiveMemoryWarning
 {
-    [super viewWillAppear:animated];
-    
-    [self slidingViewControllerSetup];
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - Navigation
 

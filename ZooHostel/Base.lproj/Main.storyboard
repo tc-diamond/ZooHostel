@@ -27,13 +27,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="-43"/>
+            <point key="canvasLocation" x="-119" y="897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kxB-98-fLh">
             <objects>
                 <navigationController storyboardIdentifier="ContactsSegueIdentifier" definesPresentationContext="YES" id="SBk-Iv-eTJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oIT-Xf-vJb">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="oIT-Xf-vJb">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -42,7 +44,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VlF-Cv-YhU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="172"/>
+            <point key="canvasLocation" x="912" y="1468"/>
         </scene>
         <!--Contacts View Controller - Contacts-->
         <scene sceneID="BBM-OJ-JUS">
@@ -51,7 +53,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="h0O-0T-G6i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="egw-jD-R1h">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -81,13 +83,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="menuBarButton" destination="qZO-Rc-OSC" id="sOg-yH-MFi"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1m-mU-tL7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="172"/>
+            <point key="canvasLocation" x="1364" y="1468"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="zwY-T6-vlk">
@@ -130,13 +133,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v0V-1q-HNK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="-43"/>
+            <point key="canvasLocation" x="359" y="897"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="om4-2s-hlt">
             <objects>
                 <navigationController storyboardIdentifier="PhotoSegueIdentifier" definesPresentationContext="YES" id="DHI-r8-5z5" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rAi-3i-par">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rAi-3i-par">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -145,7 +150,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Api-cN-Wnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="840"/>
+            <point key="canvasLocation" x="912" y="2136"/>
         </scene>
         <!--Photo View Controller - Photo-->
         <scene sceneID="a4t-kw-Swd">
@@ -154,7 +159,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="fsS-NH-N6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94844439491280352" green="0.96736156940460205" blue="0.91156406231574816" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="GLo-1n-b1h" customClass="ASHSpringyCollectionViewFlowLayout"/>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DK8-4y-6qO" customClass="TCDPhotoCollectionViewCell">
@@ -182,10 +187,6 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="C4L-RP-H7K" id="Hv6-Zw-GSD"/>
-                            <outlet property="delegate" destination="C4L-RP-H7K" id="Zdf-Jo-cne"/>
-                        </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Photo" id="Qft-UO-kC8">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="tcc-Le-arP">
@@ -197,13 +198,15 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soW-VC-6hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="840"/>
+            <point key="canvasLocation" x="1364" y="2136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IF9-nF-Q2p">
             <objects>
-                <navigationController storyboardIdentifier="MainSegueIdentifier" definesPresentationContext="YES" id="KqV-vP-OPb" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bFD-CW-rap">
+                <navigationController storyboardIdentifier="CrewSegueIdentifier" definesPresentationContext="YES" id="KqV-vP-OPb" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="bFD-CW-rap">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -212,12 +215,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48C-Zk-RRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="-500"/>
+            <point key="canvasLocation" x="2328" y="520"/>
         </scene>
-        <!--Main View Controller - Главная-->
+        <!--Crew View Controller - Наша команда-->
         <scene sceneID="oeE-7B-m4f">
             <objects>
-                <viewController id="OGg-J1-jaK" customClass="TCDMainViewController" sceneMemberID="viewController">
+                <viewController id="OGg-J1-jaK" customClass="TCDCrewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rzb-T5-x7Z"/>
                         <viewControllerLayoutGuide type="bottom" id="Dca-0G-tv0"/>
@@ -227,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Главная" id="ibG-Jl-bCT">
+                    <navigationItem key="navigationItem" title="Наша команда" id="ibG-Jl-bCT">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="tZZ-2z-9eN">
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="OGg-J1-jaK" id="NDY-Li-4C2"/>
@@ -237,7 +240,133 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2u-tf-jiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="-500"/>
+            <point key="canvasLocation" x="2752" y="520"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VIT-TG-QkA">
+            <objects>
+                <navigationController storyboardIdentifier="MainSegueIdentifier" definesPresentationContext="YES" id="Pgj-lT-7nu" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qBR-CT-xda">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d6h-aB-Vbx" kind="relationship" relationship="rootViewController" id="u3e-M4-WVm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVC-l5-4UF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="-508"/>
+        </scene>
+        <!--Main View Controller - Главная-->
+        <scene sceneID="akd-Ha-VQ6">
+            <objects>
+                <viewController id="d6h-aB-Vbx" customClass="TCDMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zpu-TE-YsD"/>
+                        <viewControllerLayoutGuide type="bottom" id="nEE-xX-Y1R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qeF-gM-X2v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Главная" id="aTv-7h-BHb">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="0fd-Ng-Kdc">
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="d6h-aB-Vbx" id="0m9-6t-Qrb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Piv-6u-Ocb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-508"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S04-CX-1qc">
+            <objects>
+                <navigationController storyboardIdentifier="ProgramTypesSegueIdentifier" definesPresentationContext="YES" id="sN3-1g-XK2" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="As6-ep-WB5">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="q3O-X2-khb" kind="relationship" relationship="rootViewController" id="808-sv-5ch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zec-nf-aCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="822"/>
+        </scene>
+        <!--Program Types View Controller - Виды Путевок-->
+        <scene sceneID="na1-Eu-rM1">
+            <objects>
+                <viewController id="q3O-X2-khb" customClass="TCDProgramTypesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fLe-Jr-lYQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9dj-XB-4ea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScJ-hm-dff">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Виды Путевок" id="Dla-in-DnX">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="WF6-ch-Mzg">
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="q3O-X2-khb" id="w9c-6m-Nyl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCx-as-Og1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="822"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LUl-dj-U4o">
+            <objects>
+                <navigationController storyboardIdentifier="AboutUsSegueIdentifier" definesPresentationContext="YES" id="XLZ-gA-eeX" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="hbv-hc-4Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3HY-yc-apl" kind="relationship" relationship="rootViewController" id="hE7-kv-XHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-N5-Ee0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="156"/>
+        </scene>
+        <!--About Us View Controller - О нас-->
+        <scene sceneID="aBg-io-wdV">
+            <objects>
+                <viewController id="3HY-yc-apl" customClass="TCDAboutUsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ECl-OK-jye"/>
+                        <viewControllerLayoutGuide type="bottom" id="x1W-K6-87k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ips-a1-OSo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="О нас" id="Bkj-BX-Sk4">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="ZJX-oz-lrz">
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="3HY-yc-apl" id="dFk-79-lhY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgu-wV-6sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="156"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

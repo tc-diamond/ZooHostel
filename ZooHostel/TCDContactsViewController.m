@@ -10,6 +10,8 @@
 #import "UIViewController+SlidingSetup.h"
 #import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
+NSString * const kContactsSegueIdentifier = @"ContactsSegueIdentifier";
+
 @interface TCDContactsViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *menuBarButton;
@@ -25,6 +27,16 @@
     [self slidingViewControllerSetup];
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+
+#pragma mark - Navigation
+
 - (IBAction)menuBarButtonTapped:(id)sender
 {
     if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredLeft)
@@ -37,22 +49,12 @@
     }
 }
 
-#pragma mark - UICollectionViewDelegate
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
-    return 0;
-}
-
-/*
-#pragma mark - Navigation
-
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

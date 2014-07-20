@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString * const kContactsSegueIdentifier;
+
 @interface TCDContactsViewController : UICollectionViewController
 
 @end
