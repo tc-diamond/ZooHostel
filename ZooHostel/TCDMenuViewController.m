@@ -13,7 +13,8 @@
 #import "TCDAboutUsViewController.h"
 #import "TCDContactsViewController.h"
 #import "TCDPhotoViewController.h"
-#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import "UIViewController+ReSideMenu.h"
+#import <RESideMenu/RESideMenu.h>
 
 static NSString * const kPrincipesSegueIdentifier = @"PrincipesSegueIdentifier";
 static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
@@ -79,7 +80,7 @@ static CGFloat const kTopImageViewHeight = 139.f;
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.textLabel.text = self.dataSource[indexPath.row];
-    cell.backgroundColor = [UIColor darkGrayColor];
+    cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor whiteColor];
     if ([indexPath isEqual:self.selectedIndexPath]) {
         [tableView selectRowAtIndexPath:indexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
@@ -94,8 +95,8 @@ static CGFloat const kTopImageViewHeight = 139.f;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.selectedIndexPath = indexPath;
-    self.slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.seguesSource[indexPath.row]];
-    [self.slidingViewController resetTopViewAnimated:YES];
+    self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.seguesSource[indexPath.row]];
+    [self.sideMenuViewController hideMenuViewController];
 }
 
 #pragma mark - UIScrollViewDelegate

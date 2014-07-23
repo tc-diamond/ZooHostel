@@ -37,6 +37,7 @@
 		30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */; };
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
 		97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AEB10019766CD2008341DA /* TCDPhotoLayout.m */; };
+		97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C35834197FD3E8008D24AC /* TCDSideMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoLayout.h; sourceTree = "<group>"; };
 		97AEB10019766CD2008341DA /* TCDPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoLayout.m; sourceTree = "<group>"; };
+		97C35833197FD3E8008D24AC /* TCDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDSideMenu.h; sourceTree = "<group>"; };
+		97C35834197FD3E8008D24AC /* TCDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDSideMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				30B5583E19728683007C4F80 /* Main.storyboard */,
 				30B5586D19729D53007C4F80 /* UIViewController+SlidingSetup.h */,
 				30B5586E19729D53007C4F80 /* UIViewController+SlidingSetup.m */,
+				97C35833197FD3E8008D24AC /* TCDSideMenu.h */,
+				97C35834197FD3E8008D24AC /* TCDSideMenu.m */,
 				30B5588719743E7D007C4F80 /* Vendor */,
 				30B558761972B434007C4F80 /* ArrayManage */,
 				30B5586119728B51007C4F80 /* TCDMenuViewController.h */,
@@ -398,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */,
+				97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */,
 				30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */,
 				30B5583D19728683007C4F80 /* TCDAppDelegate.m in Sources */,
 				30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */,

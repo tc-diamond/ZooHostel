@@ -1,10 +1,13 @@
 PODS:
   - ECSlidingViewController (2.0.2)
+  - RESideMenu (4.0.5)
 
 DEPENDENCIES:
   - ECSlidingViewController (~> 2.0.1)
+  - RESideMenu (~> 4.0.5)
 
 SPEC CHECKSUMS:
   ECSlidingViewController: 6c11fadb10d720c2d48bc577962332bdd4264c9f
+  RESideMenu: 0a6f20a11412975d683fab9db2d255865d0aaeee
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1

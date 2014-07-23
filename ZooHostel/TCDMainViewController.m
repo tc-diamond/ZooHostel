@@ -8,7 +8,8 @@
 
 #import "TCDMainViewController.h"
 #import "UIViewController+SlidingSetup.h"
-#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import <UIViewController+RESideMenu.h>
+#import <RESideMenu/RESideMenu.h>
 
 NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 
@@ -22,6 +23,9 @@ NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 {
     [super viewDidLoad];
     
+    self.sideMenuViewController.panFromEdge = YES;
+    self.sideMenuViewController.parallaxEnabled = YES;
+    self.sideMenuViewController.backgroundImage = [UIImage imageNamed:@"4"];
     // Do any additional setup after loading the view.
 }
 
@@ -29,21 +33,14 @@ NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 {
     [super viewWillAppear:animated];
     
-    [self slidingViewControllerSetup];
+//    [self slidingViewControllerSetup];
 }
 
 #pragma mark - Navigation
 
 - (IBAction)menuBarButtonTapped:(id)sender
 {
-    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredLeft)
-    {
-        [self.slidingViewController resetTopViewAnimated:YES];
-    }
-    else
-    {
-        [self.slidingViewController anchorTopViewToRightAnimated:YES];
-    }
+    [self.sideMenuViewController presentLeftMenuViewController];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
