@@ -340,7 +340,7 @@
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-S2-nf1">
                                         <rect key="frame" x="20" y="20" width="280" height="954"/>
-                                        <mutableString key="text">В путевку «Стандарт» входят следующие услуги:
+                                        <string key="text">В путевку «Стандарт» входят следующие услуги:
 индивидуальная адаптационная программа для будущих дачников
 проживание в просторных комфортабельных номерах;
 дневное пребывание питомцев (с 8.00 до 22.00)
@@ -360,7 +360,7 @@
 -индивидуальные занятия (тестовые или тренировочные) по программе «Городская собака» с профессиональным инструктором; 
 -зоотакси Удачное;
 
-Более подробную информацию читайте здесь: http://vk.com/topic-23223779_28952848</mutableString>
+Более подробную информацию читайте здесь: http://vk.com/topic-23223779_28952848</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -416,7 +416,7 @@
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="vGE-wT-oU1">
                                         <rect key="frame" x="20" y="20" width="280" height="548"/>
-                                        <mutableString key="text">Наш девиз:
+                                        <string key="text">Наш девиз:
 
 «Вы – спокойно путешествуете,
 
@@ -425,7 +425,7 @@
 Наша загородная зоогостиница «Дача - Удача» принимаетна отдых домашних питомцев с 2007 года. Многие питомцы, однажды отдохнувшие на «Даче - Удаче», стали нашими постоянными гостями.
 Наша зоогостиница находится на Приозерском шоссе, в 10 км от Санкт-Петербурга, в экологически чистом и красивом местечке.
 
-Для удобства и спокойствия владельцев наших "дачников", а также для комфортного и с пользой проведенного отдыха их любимцев, "Дача - Удача" рада предложить два вида путевок: «Стандарт» и «Люкс».</mutableString>
+Для удобства и спокойствия владельцев наших "дачников", а также для комфортного и с пользой проведенного отдыха их любимцев, "Дача - Удача" рада предложить два вида путевок: «Стандарт» и «Люкс».</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
