@@ -7,6 +7,7 @@
 //
 
 #import "TCDPhotoCollectionViewCell.h"
+#import "EXPhotoViewer.h"
 
 @implementation TCDPhotoCollectionViewCell
 
@@ -17,6 +18,21 @@
         // Initialization code
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapped:)];
+        [self addGestureRecognizer:gesture];
+        self.layer.cornerRadius = 4;
+    }
+    return self;
+}
+
+- (void)tapped:(UITapGestureRecognizer*)gesture
+{
+    [EXPhotoViewer showImageFrom:self.imageView];
 }
 
 /*

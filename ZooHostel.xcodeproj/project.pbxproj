@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302B907019859BEF00C056D2 /* conf.travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 302B906F19859BEF00C056D2 /* conf.travis.yml */; };
 		30B5582D19728683007C4F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B5582C19728683007C4F80 /* Foundation.framework */; };
 		30B5582F19728683007C4F80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B5582E19728683007C4F80 /* CoreGraphics.framework */; };
 		30B5583119728683007C4F80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B5583019728683007C4F80 /* UIKit.framework */; };
@@ -23,20 +24,16 @@
 		30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5586219728B51007C4F80 /* TCDMenuViewController.m */; };
 		30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5586519728D48007C4F80 /* TCDContactsViewController.m */; };
 		30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */; };
-		30B5586F19729D53007C4F80 /* UIViewController+SlidingSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5586E19729D53007C4F80 /* UIViewController+SlidingSetup.m */; };
 		30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B558711972B34E007C4F80 /* ArrayDataSource.m */; };
 		30B558751972B42C007C4F80 /* ArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B558741972B42C007C4F80 /* ArrayDelegate.m */; };
 		30B558781972B6DF007C4F80 /* Photo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B558771972B6DF007C4F80 /* Photo.plist */; };
 		30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */; };
 		30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5587E19732584007C4F80 /* TCDMainViewController.m */; };
-		30B5588419743E6B007C4F80 /* UIPhotoGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5588119743E6B007C4F80 /* UIPhotoGalleryView.m */; };
-		30B5588519743E6B007C4F80 /* UIPhotoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5588319743E6B007C4F80 /* UIPhotoItemView.m */; };
-		30B5588A197441A1007C4F80 /* UIPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */; };
 		30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */; };
 		30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */; };
 		30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */; };
+		30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36C219803AF00098F43F /* EXPhotoViewer.m */; };
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
-		97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AEB10019766CD2008341DA /* TCDPhotoLayout.m */; };
 		97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C35834197FD3E8008D24AC /* TCDSideMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		12E49EBAAAF84759A864418E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		302B906F19859BEF00C056D2 /* conf.travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = conf.travis.yml; sourceTree = "<group>"; };
 		30B5582919728683007C4F80 /* ZooHostel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooHostel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B5582C19728683007C4F80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30B5582E19728683007C4F80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,8 +73,6 @@
 		30B5586519728D48007C4F80 /* TCDContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDContactsViewController.m; sourceTree = "<group>"; };
 		30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoViewController.h; sourceTree = "<group>"; };
 		30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoViewController.m; sourceTree = "<group>"; };
-		30B5586D19729D53007C4F80 /* UIViewController+SlidingSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SlidingSetup.h"; sourceTree = "<group>"; };
-		30B5586E19729D53007C4F80 /* UIViewController+SlidingSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SlidingSetup.m"; sourceTree = "<group>"; };
 		30B558701972B34E007C4F80 /* ArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDataSource.h; sourceTree = "<group>"; };
 		30B558711972B34E007C4F80 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		30B558731972B42C007C4F80 /* ArrayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDelegate.h; sourceTree = "<group>"; };
@@ -86,21 +82,15 @@
 		30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		30B5587D19732584007C4F80 /* TCDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDMainViewController.h; sourceTree = "<group>"; };
 		30B5587E19732584007C4F80 /* TCDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDMainViewController.m; sourceTree = "<group>"; };
-		30B5588019743E6B007C4F80 /* UIPhotoGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryView.h; sourceTree = "<group>"; };
-		30B5588119743E6B007C4F80 /* UIPhotoGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryView.m; sourceTree = "<group>"; };
-		30B5588219743E6B007C4F80 /* UIPhotoItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoItemView.h; sourceTree = "<group>"; };
-		30B5588319743E6B007C4F80 /* UIPhotoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoItemView.m; sourceTree = "<group>"; };
-		30B55888197441A1007C4F80 /* UIPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPhotoGalleryViewController.h; sourceTree = "<group>"; };
-		30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPhotoGalleryViewController.m; sourceTree = "<group>"; };
 		30BC36A6197AD7560098F43F /* TCDAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDAboutUsViewController.h; sourceTree = "<group>"; };
 		30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDAboutUsViewController.m; sourceTree = "<group>"; };
 		30BC36A9197AD8120098F43F /* TCDProgramTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDProgramTypesViewController.h; sourceTree = "<group>"; };
 		30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDProgramTypesViewController.m; sourceTree = "<group>"; };
 		30BC36AC197ADFAF0098F43F /* TCDCrewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDCrewViewController.h; sourceTree = "<group>"; };
 		30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDCrewViewController.m; sourceTree = "<group>"; };
+		30BC36C119803AF00098F43F /* EXPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPhotoViewer.h; sourceTree = "<group>"; };
+		30BC36C219803AF00098F43F /* EXPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPhotoViewer.m; sourceTree = "<group>"; };
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoLayout.h; sourceTree = "<group>"; };
-		97AEB10019766CD2008341DA /* TCDPhotoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoLayout.m; sourceTree = "<group>"; };
 		97C35833197FD3E8008D24AC /* TCDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDSideMenu.h; sourceTree = "<group>"; };
 		97C35834197FD3E8008D24AC /* TCDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDSideMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,11 +158,11 @@
 				30B5583B19728683007C4F80 /* TCDAppDelegate.h */,
 				30B5583C19728683007C4F80 /* TCDAppDelegate.m */,
 				30B5583E19728683007C4F80 /* Main.storyboard */,
-				30B5586D19729D53007C4F80 /* UIViewController+SlidingSetup.h */,
-				30B5586E19729D53007C4F80 /* UIViewController+SlidingSetup.m */,
+				302B906F19859BEF00C056D2 /* conf.travis.yml */,
 				97C35833197FD3E8008D24AC /* TCDSideMenu.h */,
 				97C35834197FD3E8008D24AC /* TCDSideMenu.m */,
-				30B5588719743E7D007C4F80 /* Vendor */,
+				30BC36C119803AF00098F43F /* EXPhotoViewer.h */,
+				30BC36C219803AF00098F43F /* EXPhotoViewer.m */,
 				30B558761972B434007C4F80 /* ArrayManage */,
 				30B5586119728B51007C4F80 /* TCDMenuViewController.h */,
 				30B5586219728B51007C4F80 /* TCDMenuViewController.m */,
@@ -188,8 +178,6 @@
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
 				30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */,
-				97AEB0FF19766CD2008341DA /* TCDPhotoLayout.h */,
-				97AEB10019766CD2008341DA /* TCDPhotoLayout.m */,
 				30B558791972CA06007C4F80 /* Cells */,
 				30B558771972B6DF007C4F80 /* Photo.plist */,
 				30B5584419728683007C4F80 /* Images.xcassets */,
@@ -245,27 +233,6 @@
 				30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */,
 			);
 			name = Cells;
-			sourceTree = "<group>";
-		};
-		30B5588619743E71007C4F80 /* UIPhotoGalleryViewController */ = {
-			isa = PBXGroup;
-			children = (
-				30B55888197441A1007C4F80 /* UIPhotoGalleryViewController.h */,
-				30B55889197441A1007C4F80 /* UIPhotoGalleryViewController.m */,
-				30B5588019743E6B007C4F80 /* UIPhotoGalleryView.h */,
-				30B5588119743E6B007C4F80 /* UIPhotoGalleryView.m */,
-				30B5588219743E6B007C4F80 /* UIPhotoItemView.h */,
-				30B5588319743E6B007C4F80 /* UIPhotoItemView.m */,
-			);
-			name = UIPhotoGalleryViewController;
-			sourceTree = "<group>";
-		};
-		30B5588719743E7D007C4F80 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				30B5588619743E71007C4F80 /* UIPhotoGalleryViewController */,
-			);
-			name = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30B5584519728683007C4F80 /* Images.xcassets in Resources */,
+				302B907019859BEF00C056D2 /* conf.travis.yml in Resources */,
 				30B5583719728683007C4F80 /* InfoPlist.strings in Resources */,
 				30B5584019728683007C4F80 /* Main.storyboard in Resources */,
 				30B558781972B6DF007C4F80 /* Photo.plist in Resources */,
@@ -408,16 +376,12 @@
 				30B5583D19728683007C4F80 /* TCDAppDelegate.m in Sources */,
 				30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */,
 				30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */,
-				30B5588419743E6B007C4F80 /* UIPhotoGalleryView.m in Sources */,
 				30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */,
 				30B5583919728683007C4F80 /* main.m in Sources */,
-				30B5588519743E6B007C4F80 /* UIPhotoItemView.m in Sources */,
 				30B558751972B42C007C4F80 /* ArrayDelegate.m in Sources */,
-				30B5586F19729D53007C4F80 /* UIViewController+SlidingSetup.m in Sources */,
-				30B5588A197441A1007C4F80 /* UIPhotoGalleryViewController.m in Sources */,
+				30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */,
 				30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */,
 				30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */,
-				97AEB10119766CD2008341DA /* TCDPhotoLayout.m in Sources */,
 				30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */,
 				30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */,
 			);
@@ -562,6 +526,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

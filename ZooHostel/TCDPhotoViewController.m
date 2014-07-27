@@ -10,19 +10,15 @@
 #import "ArrayDelegate.h"
 #import "TCDPhotoCollectionViewCell.h"
 #import "TCDPhotoViewController.h"
-#import "UIPhotoGalleryView.h"
-#import "UIPhotoGalleryViewController.h"
-#import "UIViewController+SlidingSetup.h"
-#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import <RESideMenu/RESideMenu.h>
 
 static CGFloat const kDefaultCellHeight = 50;
 NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 
-@interface TCDPhotoViewController () <UIPhotoGalleryDataSource>
+@interface TCDPhotoViewController ()
 
 @property (strong, nonatomic) ArrayDataSource *arrayDataSource;
 @property (strong, nonatomic) ArrayDelegate *arrayDelegate;
-@property (strong, nonatomic) UIPhotoGalleryViewController *photoGalleryViewController;
 
 @end
 
@@ -31,8 +27,6 @@ NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self slidingViewControllerSetup];
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Photo" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
@@ -45,14 +39,42 @@ NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
     self.arrayDelegate = [[ArrayDelegate alloc]initWithDataSource:self.arrayDataSource sizeBlock:^CGSize(TCDPhotoCollectionViewCell *cell, id item, UICollectionView *collectionView, UICollectionViewFlowLayout *collectionViewLayout, NSIndexPath *indexPath) {
         UIImage *image = [UIImage imageNamed:item];
         
-        return CGSizeMake(image.size.width * kDefaultCellHeight / image.size.height, kDefaultCellHeight);
+        NSInteger nearestIndex = -1;//one in a row
+        if (indexPath.item % 2 == 0 ) {
+            //left item
+            nearestIndex = indexPath.item + 1;
+        } else {
+            //right item
+            nearestIndex = indexPath.item - 1;
+        }
+        
+        CGSize size;
+        
+        if (nearestIndex >= self.arrayDataSource.items.count) {
+            //out of items array
+            size = CGSizeMake(collectionView.bounds.size.width, image.size.height * collectionView.bounds.size.width / image.size.width);
+        } else {
+            UIImage *nearestImage = [UIImage imageNamed:self.arrayDataSource.items[nearestIndex]];
+            CGSize currImageSize = image.size;
+            CGSize nearestImageSize = nearestImage.size;
+            CGFloat heightDiff = nearestImage.size.height / currImageSize.height;
+            nearestImageSize.width /= heightDiff;
+            nearestImageSize.height /= heightDiff;
+            
+            CGFloat sumWidth = currImageSize.width + nearestImageSize.width;
+            CGFloat scale = sumWidth / collectionView.bounds.size.width;
+            currImageSize.width = floorf(currImageSize.width);
+            size = CGSizeMake(currImageSize.width / scale - 1, floorf(currImageSize.height / scale) - 1);
+        }
+        
+        return size;
     } selectBlock:^(TCDPhotoCollectionViewCell *cell, id item, UICollectionView *collectionView, NSIndexPath *indexPath) {
-        self.photoGalleryViewController = [[UIPhotoGalleryViewController alloc]init];
-        self.photoGalleryViewController.dataSource = self;
-        self.photoGalleryViewController.showStatusBar = YES;
-        self.photoGalleryViewController.initialIndex = indexPath.item;
-        self.photoGalleryViewController.vPhotoGallery.initialIndex = indexPath.item;
-        [self.navigationController pushViewController:self.photoGalleryViewController animated:YES];
+//        self.photoGalleryViewController = [[UIPhotoGalleryViewController alloc]init];
+//        self.photoGalleryViewController.dataSource = self;
+//        self.photoGalleryViewController.showStatusBar = YES;
+//        self.photoGalleryViewController.initialIndex = indexPath.item;
+//        self.photoGalleryViewController.vPhotoGallery.initialIndex = indexPath.item;
+//        [self.navigationController pushViewController:self.photoGalleryViewController animated:YES];
     }];
     self.collectionView.delegate = self.arrayDelegate;
     // Do any additional setup after loading the view.
@@ -65,30 +87,11 @@ NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
     return filePath;
 }
 
-#pragma mark - PhotoGalleryDataSource
-
-- (NSInteger)numberOfViewsInPhotoGallery:(UIPhotoGalleryView *)photoGallery
-{
-    return [self.arrayDataSource.items count];
-}
-
-- (UIImage *)photoGallery:(UIPhotoGalleryView *)photoGallery localImageAtIndex:(NSInteger)index
-{
-    return [UIImage imageNamed:self.arrayDataSource.items[index]];
-}
-
 #pragma mark - Navigation
 
 - (IBAction)menuBarButtonTapped:(id)sender
 {
-    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredLeft)
-    {
-        [self.slidingViewController resetTopViewAnimated:YES];
-    }
-    else
-    {
-        [self.slidingViewController anchorTopViewToRightAnimated:YES];
-    }
+    [self.sideMenuViewController presentLeftMenuViewController];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

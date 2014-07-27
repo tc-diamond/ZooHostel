@@ -7,8 +7,6 @@
 //
 
 #import "TCDMainViewController.h"
-#import "UIViewController+SlidingSetup.h"
-#import <UIViewController+RESideMenu.h>
 #import <RESideMenu/RESideMenu.h>
 
 NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
@@ -23,9 +21,7 @@ NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 {
     [super viewDidLoad];
     
-    self.sideMenuViewController.panFromEdge = YES;
-    self.sideMenuViewController.parallaxEnabled = YES;
-    self.sideMenuViewController.backgroundImage = [UIImage imageNamed:@"4"];
+    
     // Do any additional setup after loading the view.
 }
 

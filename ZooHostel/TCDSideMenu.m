@@ -27,6 +27,11 @@ static NSString * const contentMenuVCIdentifier = @"MainSegueIdentifier";
 {
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:contentMenuVCIdentifier];
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:leftMenuVCIdentifier];
+    self.backgroundImage = [UIImage imageNamed:@"menuBackground"];
+
+    self.panFromEdge = YES;
+    self.panGestureEnabled = YES;
+    self.parallaxEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,8 +7,7 @@
 //
 
 #import "TCDAboutUsViewController.h"
-#import "UIViewController+SlidingSetup.h"
-#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
+#import <RESideMenu/RESideMenu.h>
 
 NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
 
@@ -22,7 +21,6 @@ NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
 {
     [super viewDidLoad];
     
-    [self slidingViewControllerSetup];
     // Do any additional setup after loading the view.
 }
 
@@ -37,14 +35,7 @@ NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
 
 - (IBAction)menuBarButtonTapped:(id)sender
 {
-    if (self.slidingViewController.currentTopViewPosition == ECSlidingViewControllerTopViewPositionAnchoredLeft)
-    {
-        [self.slidingViewController resetTopViewAnimated:YES];
-    }
-    else
-    {
-        [self.slidingViewController anchorTopViewToRightAnimated:YES];
-    }
+    [self.sideMenuViewController presentLeftMenuViewController];
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
