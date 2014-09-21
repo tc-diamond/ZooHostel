@@ -10,6 +10,6 @@
 
 extern NSString * const kAboutUsSegueIdentifier;
 
-@interface TCDAboutUsViewController : UIViewController
+@interface TCDAboutUsViewController : TCDScrollableViewController
 
 @end

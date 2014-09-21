@@ -10,6 +10,6 @@
 
 extern NSString * const kMainSegueIdentifier;
 
-@interface TCDMainViewController : UIViewController
+@interface TCDMainViewController : TCDScrollableViewController
 
 @end

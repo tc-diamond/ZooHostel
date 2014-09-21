@@ -8,12 +8,18 @@
 
 #import "ArrayDataSource.h"
 #import "ArrayDelegate.h"
+#import "TCDParser.h"
+#import "TCDPhoto.h"
+#import "TCDPhotoAlbum.h"
 #import "TCDPhotoCollectionViewCell.h"
+#import "TCDPhotoCollectionViewHeader.h"
 #import "TCDPhotoViewController.h"
 #import <RESideMenu/RESideMenu.h>
+#import <UIImageView+AFNetworking.h>
 
 static CGFloat const kDefaultCellHeight = 50;
 NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
+static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.megagroup.ru/d/683110/d/photos.txt";
 
 @interface TCDPhotoViewController ()
 
@@ -28,9 +34,17 @@ NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 {
     [super viewDidLoad];
     
+    NSString *parsingString = [NSString stringWithContentsOfURL:[NSURL URLWithString:TCDPhotoViewControllerPhotosURLString] encoding:NSUTF8StringEncoding error:nil];
+    NSArray *photoAlbums = [TCDParser parseStringToPhotoAlbums:parsingString];
+    
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Photo" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
     NSArray *dataSource = [NSArray arrayWithArray:[dict allValues]];
+    self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:photoAlbums itemsAreSections:YES cellIdentifier:@"Cell" headerIdentifier:@"Header" footerIdentifier:nil configureCellBlock:^(TCDPhotoCollectionViewCell *cell, TCDPhoto *photo) {
+        [cell.imageView setImageWithURL:photo.presentationUrl];
+    } configureHeaderBlock:^(TCDPhotoCollectionViewHeader *cell, TCDPhotoAlbum *photoAlbum) {
+        cell.titleLabel.text = photoAlbum.title;
+    } configureFooterBlock:nil];
     self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:dataSource cellIdentifier:@"Cell" configureCellBlock:^(TCDPhotoCollectionViewCell *cell, id item) {
         cell.imageView.image = [UIImage imageNamed:item];
     }];

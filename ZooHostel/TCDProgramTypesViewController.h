@@ -10,6 +10,6 @@
 
 extern NSString * const kProgramTypesSegueIdentifier;
 
-@interface TCDProgramTypesViewController : UIViewController
+@interface TCDProgramTypesViewController : TCDScrollableViewController
 
 @end

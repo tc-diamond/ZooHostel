@@ -8,10 +8,13 @@
 
 #import "TCDProgramTypesViewController.h"
 #import <RESideMenu/RESideMenu.h>
+#import <TTTAttributedLabel/TTTAttributedLabel.h>
 
 NSString * const kProgramTypesSegueIdentifier = @"ProgramTypesSegueIdentifier";
 
 @interface TCDProgramTypesViewController ()
+
+@property (weak, nonatomic) IBOutlet TTTAttributedLabel *contactVKLabel;
 
 @end
 
@@ -21,6 +24,8 @@ NSString * const kProgramTypesSegueIdentifier = @"ProgramTypesSegueIdentifier";
 {
     [super viewDidLoad];
     
+    NSRange range = [self.contactVKLabel.text rangeOfString:@"группе вконтакте"];
+    [self.contactVKLabel addLinkToURL:[NSURL URLWithString:@"http://vk.com/topic-23223779_28952848"] withRange:range];
     // Do any additional setup after loading the view.
 }
 
