@@ -304,7 +304,7 @@
                                                 <string key="text">"Дача - Удача" с 2007 года принимает на загородный отдых собак, кошек и других домашних любимцев.
 Зоогостиница дает возможность Вам - спокойно путешествовать, а Вашим питомцам - комфортно отдыхать.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686274509803" green="0.20784313725490197" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-CO-OXv">
@@ -312,7 +312,7 @@
                                                 <string key="text">"Дача - Удача" серьезно относится к каникулам Вашего любимца и для каждого питомца проводит специально разработанную программу адаптации к новым условиям.
 Планируя любую поездку, Вы больше не будете беспокоиться об отдыхе Вашего любимца.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686274509803" green="0.20784313725490197" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_top" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-Ef-gpi">
@@ -537,13 +537,13 @@
                                                 <string key="text">Наш девиз:
 </string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="«Вы – спокойно путешествуете, Ваши любимцы – комфортно отдыхают»" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-06-1yQ">
                                                 <rect key="frame" x="16" y="42" width="288" height="76"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-zb-lxN">
@@ -551,16 +551,31 @@
                                                 <string key="text">Наша загородная зоогостиница «Дача - Удача» принимает на отдых домашних питомцев с 2007 года. Многие питомцы, однажды отдохнувшие на «Даче - Удаче», стали нашими постоянными гостями.
 Наша зоогостиница находится на Приозерском шоссе, в 10 км от Санкт-Петербурга, в экологически чистом и красивом местечке.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-RL-xJ5">
                                                 <rect key="frame" x="16" y="437" width="288" height="177"/>
                                                 <string key="text">Для удобства и спокойствия владельцев наших "дачников", а также для комфортного и с пользой проведенного отдыха их любимцев, "Дача - Удача" рада предложить два вида путевок: «Стандарт» и «Люкс».</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-QM-KqZ">
+                                                <rect key="frame" x="113" y="399" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Zwc-aS-r5b"/>
+                                                    <constraint firstAttribute="width" constant="35" id="x5d-W8-FKF"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                <state key="normal" title="Button" image="location">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ourLocation:" destination="3HY-yc-apl" eventType="touchUpInside" id="UwN-uY-cBX"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -573,12 +588,14 @@
                                             <constraint firstItem="qSs-RL-xJ5" firstAttribute="leading" secondItem="bnn-nL-ECd" secondAttribute="leading" constant="16" id="GKg-2h-yUO"/>
                                             <constraint firstItem="hkt-zb-lxN" firstAttribute="top" secondItem="aVz-06-1yQ" secondAttribute="bottom" constant="8" id="ILv-mZ-Ivb"/>
                                             <constraint firstItem="qSs-RL-xJ5" firstAttribute="top" secondItem="hkt-zb-lxN" secondAttribute="bottom" constant="8" id="Lld-JA-0r6"/>
+                                            <constraint firstItem="VLh-QM-KqZ" firstAttribute="leading" secondItem="hkt-zb-lxN" secondAttribute="leading" constant="97" id="OgB-Qf-NYg"/>
                                             <constraint firstItem="hkt-zb-lxN" firstAttribute="leading" secondItem="bnn-nL-ECd" secondAttribute="leading" constant="16" id="Pep-kc-PJI"/>
                                             <constraint firstItem="Sy0-cY-Qkr" firstAttribute="top" secondItem="bnn-nL-ECd" secondAttribute="top" constant="8" id="QMV-1o-WAt"/>
                                             <constraint firstAttribute="trailing" secondItem="hkt-zb-lxN" secondAttribute="trailing" constant="16" id="SMh-uV-oGg"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="WEp-g9-Vsn"/>
                                             <constraint firstAttribute="width" constant="320" id="s7S-ay-c6M"/>
                                             <constraint firstAttribute="trailing" secondItem="qSs-RL-xJ5" secondAttribute="trailing" constant="16" id="wPf-BX-hcR"/>
+                                            <constraint firstItem="VLh-QM-KqZ" firstAttribute="bottom" secondItem="hkt-zb-lxN" secondAttribute="bottom" constant="5" id="xlh-Ax-QUK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -625,6 +642,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="location" width="128" height="128"/>
         <image name="menu_top" width="320" height="139"/>
         <image name="sidemenu_icon" width="20" height="20"/>
     </resources>

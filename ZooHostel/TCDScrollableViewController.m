@@ -24,24 +24,20 @@
     self.isFirstLayout = YES;
     
     
-    if (self.isFirstLayout) {
-        self.isFirstLayout = NO;
-        
-        UIImage *image = [UIImage imageNamed:@"Background"];
+    UIImage *image = [UIImage imageNamed:@"Background"];
 //        CGFloat heightByWidth = self.scrollView.contentSize.height / self.scrollView.contentSize.width;
-        
-        //    CGSize *backgroundSize = CGSizeMake(self.scrollView.contentSize.width, <#CGFloat height#>)
-        
-        CGFloat scrollHeight = self.scrollView.bounds.size.height;
-        self.backgroundView = [[GRKBlurView alloc]
-                               initWithFrame:CGRectMake(0,
-                                                        0,
-                                                        self.scrollView.bounds.size.width,
-                                                        scrollHeight + (self.scrollView.bounds.size.height - scrollHeight) / 2)];
-        self.backgroundView.targetImage = image;
-        self.backgroundView.blurRadius = 3;
-        [self.view insertSubview:self.backgroundView atIndex:0];
-    }
+    
+    //    CGSize *backgroundSize = CGSizeMake(self.scrollView.contentSize.width, <#CGFloat height#>)
+    
+    CGFloat scrollHeight = self.scrollView.bounds.size.height;
+    self.backgroundView = [[GRKBlurView alloc]
+                           initWithFrame:CGRectMake(0,
+                                                    0,
+                                                    self.scrollView.bounds.size.width,
+                                                    scrollHeight + (self.scrollView.bounds.size.height - scrollHeight) / 2)];
+    self.backgroundView.targetImage = image;
+    self.backgroundView.blurRadius = 35;
+    [self.view insertSubview:self.backgroundView atIndex:0];
 }
 
 #pragma mark - UIScrollViewDelegate
