@@ -17,7 +17,6 @@
 #import <RESideMenu/RESideMenu.h>
 #import <UIImageView+AFNetworking.h>
 
-static CGFloat const kDefaultCellHeight = 50;
 NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.megagroup.ru/d/683110/d/photos.txt";
 

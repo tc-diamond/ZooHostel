@@ -28,7 +28,7 @@
         self.isFirstLayout = NO;
         
         UIImage *image = [UIImage imageNamed:@"Background"];
-        CGFloat heightByWidth = self.scrollView.contentSize.height / self.scrollView.contentSize.width;
+//        CGFloat heightByWidth = self.scrollView.contentSize.height / self.scrollView.contentSize.width;
         
         //    CGSize *backgroundSize = CGSizeMake(self.scrollView.contentSize.width, <#CGFloat height#>)
         

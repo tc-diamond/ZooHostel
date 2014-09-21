@@ -3,7 +3,6 @@
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Side Menu-->
@@ -55,7 +54,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9We-bx-qNT">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="9We-bx-qNT">
                                 <rect key="frame" x="0.0" y="64" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -183,16 +182,16 @@
                                     <outlet property="imageView" destination="hoW-r6-wfi" id="04N-h8-amF"/>
                                 </connections>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oCR-Vk-rN4" customClass="TCDPhotoCollectionViewHeader">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="oCR-Vk-rN4" customClass="TCDPhotoCollectionViewHeader">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="262" height="26"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="26"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-K7-VXW">
-                                            <rect key="frame" x="8" y="2" width="246" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-K7-VXW">
+                                            <rect key="frame" x="8" y="2" width="272" height="21"/>
+                                            <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -200,12 +199,12 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="bottomMargin" secondItem="kVf-K7-VXW" secondAttribute="bottom" constant="-5" id="55Z-AP-pVv"/>
-                                    <constraint firstItem="kVf-K7-VXW" firstAttribute="trailing" secondItem="oCR-Vk-rN4" secondAttribute="trailingMargin" id="Rbh-rd-kqe"/>
-                                    <constraint firstItem="kVf-K7-VXW" firstAttribute="top" secondItem="oCR-Vk-rN4" secondAttribute="topMargin" constant="-6" id="boI-6Y-e62"/>
-                                    <constraint firstItem="kVf-K7-VXW" firstAttribute="leading" secondItem="oCR-Vk-rN4" secondAttribute="leadingMargin" id="uwL-pg-BEE"/>
+                                    <constraint firstItem="kVf-K7-VXW" firstAttribute="top" secondItem="oCR-Vk-rN4" secondAttribute="top" constant="2" id="59d-NC-vxC"/>
+                                    <constraint firstAttribute="trailing" secondItem="kVf-K7-VXW" secondAttribute="trailing" constant="8" id="Kbx-8i-e16"/>
+                                    <constraint firstItem="kVf-K7-VXW" firstAttribute="leading" secondItem="oCR-Vk-rN4" secondAttribute="leading" constant="8" id="jBv-Sr-mIV"/>
+                                    <constraint firstAttribute="bottom" secondItem="kVf-K7-VXW" secondAttribute="bottom" constant="3" id="kNt-Xx-Mga"/>
                                 </constraints>
-                                <size key="customSize" width="262" height="26"/>
+                                <size key="customSize" width="288" height="26"/>
                                 <connections>
                                     <outlet property="titleLabel" destination="kVf-K7-VXW" id="xnR-hT-SPX"/>
                                 </connections>
@@ -223,7 +222,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soW-VC-6hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="2124"/>
+            <point key="canvasLocation" x="1375" y="2124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IF9-nF-Q2p">
@@ -298,10 +297,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaR-Zv-oc0">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="386"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="625"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-L5-ysE">
-                                                <rect key="frame" x="16" y="16" width="288" height="163"/>
+                                                <rect key="frame" x="16" y="147" width="288" height="227"/>
                                                 <string key="text">"Дача - Удача" с 2007 года принимает на загородный отдых собак, кошек и других домашних любимцев.
 Зоогостиница дает возможность Вам - спокойно путешествовать, а Вашим питомцам - комфортно отдыхать.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
@@ -309,25 +308,31 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-CO-OXv">
-                                                <rect key="frame" x="16" y="187" width="288" height="183"/>
+                                                <rect key="frame" x="16" y="382" width="288" height="227"/>
                                                 <string key="text">"Дача - Удача" серьезно относится к каникулам Вашего любимца и для каждого питомца проводит специально разработанную программу адаптации к новым условиям.
 Планируя любую поездку, Вы больше не будете беспокоиться об отдыхе Вашего любимца.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_top" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-Ef-gpi">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="0IB-bG-CBx"/>
                                             <constraint firstItem="BNw-L5-ysE" firstAttribute="leading" secondItem="iaR-Zv-oc0" secondAttribute="leading" constant="16" id="7AW-uZ-z92"/>
+                                            <constraint firstItem="k5a-Ef-gpi" firstAttribute="leading" secondItem="iaR-Zv-oc0" secondAttribute="leading" id="AXY-Dp-epw"/>
+                                            <constraint firstAttribute="trailing" secondItem="k5a-Ef-gpi" secondAttribute="trailing" id="D4d-Qc-eDC"/>
                                             <constraint firstAttribute="trailing" secondItem="DiW-CO-OXv" secondAttribute="trailing" constant="16" id="ElH-02-Qqs"/>
                                             <constraint firstItem="DiW-CO-OXv" firstAttribute="leading" secondItem="iaR-Zv-oc0" secondAttribute="leading" constant="16" id="Hbe-AG-oJ3"/>
-                                            <constraint firstItem="BNw-L5-ysE" firstAttribute="top" secondItem="iaR-Zv-oc0" secondAttribute="top" constant="16" id="QFO-Pt-cNH"/>
                                             <constraint firstItem="DiW-CO-OXv" firstAttribute="top" secondItem="BNw-L5-ysE" secondAttribute="bottom" constant="8" id="ZDF-2s-6Fm"/>
                                             <constraint firstAttribute="trailing" secondItem="BNw-L5-ysE" secondAttribute="trailing" constant="16" id="Zmw-Sc-gbT"/>
+                                            <constraint firstItem="k5a-Ef-gpi" firstAttribute="top" secondItem="iaR-Zv-oc0" secondAttribute="top" id="lu7-TM-9YU"/>
                                             <constraint firstAttribute="height" priority="250" constant="118" id="sLb-Pr-Wrj"/>
                                             <constraint firstAttribute="bottom" secondItem="DiW-CO-OXv" secondAttribute="bottom" constant="16" id="uVu-R0-d41"/>
+                                            <constraint firstItem="BNw-L5-ysE" firstAttribute="top" secondItem="k5a-Ef-gpi" secondAttribute="bottom" constant="8" id="yEi-Ns-Fxb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -398,10 +403,10 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CId-cu-SA8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TmU-Az-gWy">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmU-Az-gWy">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1193"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-M1-JSN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-M1-JSN">
                                                 <rect key="frame" x="16" y="8" width="288" height="530"/>
                                                 <string key="text">В путевку «Стандарт» входят следующие услуги:
 индивидуальная адаптационная программа для будущих дачников
@@ -418,20 +423,20 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1G-B8-Kya">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="Y1G-B8-Kya">
                                                 <rect key="frame" x="16" y="546" width="288" height="555"/>
-                                                <mutableString key="text">Пакет «Люкс» - это дополнительный сервис к «Стандартной» путевке:
+                                                <string key="text">Пакет «Люкс» - это дополнительный сервис к «Стандартной» путевке:
 (Вы можете выбрать любую услугу в дополнение к "Стандартной" путевке)
 -санаторно-курортное пребывание (комплексное восстановление, социализация, коррекция поведения, веса);
 -спа-салон (услуги грумера: мытье, стрижка, вычесывание, тримминг, подбор средств по уходу и другие услуги);
 -комплексные консультации ветеринарного врача;
 -индивидуальные занятия (тестовые или тренировочные) по программе «Городская собака» с профессиональным инструктором; 
--зоотакси Удачное;</mutableString>
+-зоотакси Удачное;</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Более подробную информацию читайте в нашей группе вконтакте." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-TF-eT2" customClass="TTTAttributedLabel">
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Более подробную информацию читайте в нашей группе вконтакте." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-TF-eT2" customClass="TTTAttributedLabel">
                                                 <rect key="frame" x="16" y="1109" width="288" height="76"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -525,10 +530,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-nL-ECd">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="496"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="630"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy0-cY-Qkr">
-                                                <rect key="frame" x="16" y="8" width="288" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="Sy0-cY-Qkr">
+                                                <rect key="frame" x="16" y="8" width="288" height="26"/>
                                                 <string key="text">Наш девиз:
 </string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
@@ -536,13 +541,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="«Вы – спокойно путешествуете, Ваши любимцы – комфортно отдыхают»" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-06-1yQ">
-                                                <rect key="frame" x="16" y="37" width="288" height="61"/>
+                                                <rect key="frame" x="16" y="42" width="288" height="76"/>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-zb-lxN">
-                                                <rect key="frame" x="16" y="106" width="288" height="224"/>
+                                                <rect key="frame" x="16" y="126" width="288" height="303"/>
                                                 <string key="text">Наша загородная зоогостиница «Дача - Удача» принимает на отдых домашних питомцев с 2007 года. Многие питомцы, однажды отдохнувшие на «Даче - Удаче», стали нашими постоянными гостями.
 Наша зоогостиница находится на Приозерском шоссе, в 10 км от Санкт-Петербурга, в экологически чистом и красивом местечке.</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
@@ -550,7 +555,7 @@
                                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-RL-xJ5">
-                                                <rect key="frame" x="16" y="338" width="288" height="142"/>
+                                                <rect key="frame" x="16" y="437" width="288" height="177"/>
                                                 <string key="text">Для удобства и спокойствия владельцев наших "дачников", а также для комфортного и с пользой проведенного отдыха их любимцев, "Дача - Удача" рада предложить два вида путевок: «Стандарт» и «Люкс».</string>
                                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -620,6 +625,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="menu_top" width="320" height="139"/>
         <image name="sidemenu_icon" width="20" height="20"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
