@@ -34,6 +34,11 @@
 		30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36C219803AF00098F43F /* EXPhotoViewer.m */; };
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
 		97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C35834197FD3E8008D24AC /* TCDSideMenu.m */; };
+		AB61E9E719CF338C005AC87F /* TCDScrollableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */; };
+		ABCADB1519ACF63E00E327B2 /* TCDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1419ACF63E00E327B2 /* TCDParser.m */; };
+		ABCADB1A19ACF72700E327B2 /* TCDPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1919ACF72700E327B2 /* TCDPhoto.m */; };
+		ABCADB1D19ACF83400E327B2 /* TCDPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */; };
+		ABCADB2019AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +96,16 @@
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97C35833197FD3E8008D24AC /* TCDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDSideMenu.h; sourceTree = "<group>"; };
 		97C35834197FD3E8008D24AC /* TCDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDSideMenu.m; sourceTree = "<group>"; };
+		AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDScrollableViewController.h; sourceTree = "<group>"; };
+		AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDScrollableViewController.m; sourceTree = "<group>"; };
+		ABCADB1319ACF63E00E327B2 /* TCDParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDParser.h; sourceTree = "<group>"; };
+		ABCADB1419ACF63E00E327B2 /* TCDParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDParser.m; sourceTree = "<group>"; };
+		ABCADB1819ACF72700E327B2 /* TCDPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhoto.h; sourceTree = "<group>"; };
+		ABCADB1919ACF72700E327B2 /* TCDPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhoto.m; sourceTree = "<group>"; };
+		ABCADB1B19ACF83400E327B2 /* TCDPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoAlbum.h; sourceTree = "<group>"; };
+		ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoAlbum.m; sourceTree = "<group>"; };
+		ABCADB1E19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoCollectionViewHeader.h; sourceTree = "<group>"; };
+		ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoCollectionViewHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +175,8 @@
 				97C35834197FD3E8008D24AC /* TCDSideMenu.m */,
 				30BC36C119803AF00098F43F /* EXPhotoViewer.h */,
 				30BC36C219803AF00098F43F /* EXPhotoViewer.m */,
+				AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */,
+				AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */,
 				30B558761972B434007C4F80 /* ArrayManage */,
 				30B5586119728B51007C4F80 /* TCDMenuViewController.h */,
 				30B5586219728B51007C4F80 /* TCDMenuViewController.m */,
@@ -175,6 +192,8 @@
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
 				30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */,
+				ABCADB1719ACF70B00E327B2 /* Model */,
+				ABCADB1619ACF67B00E327B2 /* Parser */,
 				30B558791972CA06007C4F80 /* Cells */,
 				30B558771972B6DF007C4F80 /* Photo.plist */,
 				30B5584419728683007C4F80 /* Images.xcassets */,
@@ -228,8 +247,30 @@
 			children = (
 				30B5587A1972CA25007C4F80 /* TCDPhotoCollectionViewCell.h */,
 				30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */,
+				ABCADB1E19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.h */,
+				ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		ABCADB1619ACF67B00E327B2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				ABCADB1319ACF63E00E327B2 /* TCDParser.h */,
+				ABCADB1419ACF63E00E327B2 /* TCDParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		ABCADB1719ACF70B00E327B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABCADB1819ACF72700E327B2 /* TCDPhoto.h */,
+				ABCADB1919ACF72700E327B2 /* TCDPhoto.m */,
+				ABCADB1B19ACF83400E327B2 /* TCDPhotoAlbum.h */,
+				ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +323,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dmitri Doroschuk";
 				TargetAttributes = {
+					30B5582819728683007C4F80 = {
+						DevelopmentTeam = 6TWG7MTXRP;
+					};
 					30B5584919728683007C4F80 = {
 						TestTargetID = 30B5582819728683007C4F80;
 					};
@@ -368,14 +412,19 @@
 			files = (
 				30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */,
 				97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */,
+				AB61E9E719CF338C005AC87F /* TCDScrollableViewController.m in Sources */,
 				30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */,
 				30B5583D19728683007C4F80 /* TCDAppDelegate.m in Sources */,
 				30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */,
 				30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */,
+				ABCADB2019AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m in Sources */,
 				30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */,
+				ABCADB1D19ACF83400E327B2 /* TCDPhotoAlbum.m in Sources */,
 				30B5583919728683007C4F80 /* main.m in Sources */,
 				30B558751972B42C007C4F80 /* ArrayDelegate.m in Sources */,
 				30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */,
+				ABCADB1A19ACF72700E327B2 /* TCDPhoto.m in Sources */,
+				ABCADB1519ACF63E00E327B2 /* TCDParser.m in Sources */,
 				30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */,
 				30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */,
 				30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */,
@@ -507,11 +556,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dmitry Doroschuk (F9Z4XZ4PC7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ffc2e152-def2-4b38-ac07-fbbb3d06626c";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -522,12 +574,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Dmitry Doroschuk (F9Z4XZ4PC7)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ffc2e152-def2-4b38-ac07-fbbb3d06626c";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
