@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const kProgramTypesSegueIdentifier;
+extern NSString * const TCDProgramTypesViewControllerIdentifier;
 
 @interface TCDProgramTypesViewController : TCDScrollableViewController
 

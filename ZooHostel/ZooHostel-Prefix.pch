@@ -14,4 +14,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "TCDScrollableViewController.h"
+    #import "UIScrollView+TCDExtention.h"
+    #import <RESideMenu/RESideMenu.h>
+    #import <UIViewController+RESideMenu.h>
+    #import <libextobjc/EXTScope.h>
+    #import <libextobjc/EXTSynthesize.h>
 #endif

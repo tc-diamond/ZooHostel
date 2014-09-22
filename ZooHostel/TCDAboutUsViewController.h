@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const kAboutUsSegueIdentifier;
+extern NSString * const TCDAboutUsViewControllerIdentifier;
 
 @interface TCDAboutUsViewController : TCDScrollableViewController
 

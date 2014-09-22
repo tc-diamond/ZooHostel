@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString * const kCrewSegueIdentifier;
+extern NSString * const TCDCrewViewControllerIdentifier;
 
-@interface TCDCrewViewController : UIViewController
+@interface TCDCrewViewController : TCDScrollableViewController
 
 @end

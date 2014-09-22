@@ -35,6 +35,10 @@
 		9336988243974B57817B4BA9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F7EA9441914E34859D685F /* libPods.a */; };
 		97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C35834197FD3E8008D24AC /* TCDSideMenu.m */; };
 		AB61E9E719CF338C005AC87F /* TCDScrollableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */; };
+		AB61E9EB19D0BFE7005AC87F /* TCDPrincipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9EA19D0BFE7005AC87F /* TCDPrincipesViewController.m */; };
+		AB61E9EE19D0C378005AC87F /* TCDTermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9ED19D0C378005AC87F /* TCDTermsViewController.m */; };
+		AB61E9F119D0C5EF005AC87F /* UIViewController+BaseExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9F019D0C5EF005AC87F /* UIViewController+BaseExtention.m */; };
+		AB61E9F519D0E048005AC87F /* UIScrollView+TCDExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9F419D0E048005AC87F /* UIScrollView+TCDExtention.m */; };
 		ABCADB1519ACF63E00E327B2 /* TCDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1419ACF63E00E327B2 /* TCDParser.m */; };
 		ABCADB1A19ACF72700E327B2 /* TCDPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1919ACF72700E327B2 /* TCDPhoto.m */; };
 		ABCADB1D19ACF83400E327B2 /* TCDPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */; };
@@ -98,6 +102,14 @@
 		97C35834197FD3E8008D24AC /* TCDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDSideMenu.m; sourceTree = "<group>"; };
 		AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDScrollableViewController.h; sourceTree = "<group>"; };
 		AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDScrollableViewController.m; sourceTree = "<group>"; };
+		AB61E9E919D0BFE7005AC87F /* TCDPrincipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPrincipesViewController.h; sourceTree = "<group>"; };
+		AB61E9EA19D0BFE7005AC87F /* TCDPrincipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPrincipesViewController.m; sourceTree = "<group>"; };
+		AB61E9EC19D0C378005AC87F /* TCDTermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDTermsViewController.h; sourceTree = "<group>"; };
+		AB61E9ED19D0C378005AC87F /* TCDTermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDTermsViewController.m; sourceTree = "<group>"; };
+		AB61E9EF19D0C5EF005AC87F /* UIViewController+BaseExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseExtention.h"; sourceTree = "<group>"; };
+		AB61E9F019D0C5EF005AC87F /* UIViewController+BaseExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseExtention.m"; sourceTree = "<group>"; };
+		AB61E9F319D0E048005AC87F /* UIScrollView+TCDExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TCDExtention.h"; sourceTree = "<group>"; };
+		AB61E9F419D0E048005AC87F /* UIScrollView+TCDExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TCDExtention.m"; sourceTree = "<group>"; };
 		ABCADB1319ACF63E00E327B2 /* TCDParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDParser.h; sourceTree = "<group>"; };
 		ABCADB1419ACF63E00E327B2 /* TCDParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDParser.m; sourceTree = "<group>"; };
 		ABCADB1819ACF72700E327B2 /* TCDPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhoto.h; sourceTree = "<group>"; };
@@ -175,8 +187,8 @@
 				97C35834197FD3E8008D24AC /* TCDSideMenu.m */,
 				30BC36C119803AF00098F43F /* EXPhotoViewer.h */,
 				30BC36C219803AF00098F43F /* EXPhotoViewer.m */,
-				AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */,
-				AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */,
+				AB61E9F219D0E026005AC87F /* Categories */,
+				AB61E9E819D0AE88005AC87F /* ParrentControllers */,
 				30B558761972B434007C4F80 /* ArrayManage */,
 				30B5586119728B51007C4F80 /* TCDMenuViewController.h */,
 				30B5586219728B51007C4F80 /* TCDMenuViewController.m */,
@@ -188,6 +200,10 @@
 				30BC36AA197AD8120098F43F /* TCDProgramTypesViewController.m */,
 				30BC36AC197ADFAF0098F43F /* TCDCrewViewController.h */,
 				30BC36AD197ADFAF0098F43F /* TCDCrewViewController.m */,
+				AB61E9E919D0BFE7005AC87F /* TCDPrincipesViewController.h */,
+				AB61E9EA19D0BFE7005AC87F /* TCDPrincipesViewController.m */,
+				AB61E9EC19D0C378005AC87F /* TCDTermsViewController.h */,
+				AB61E9ED19D0C378005AC87F /* TCDTermsViewController.m */,
 				30B5586419728D48007C4F80 /* TCDContactsViewController.h */,
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
@@ -251,6 +267,26 @@
 				ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		AB61E9E819D0AE88005AC87F /* ParrentControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */,
+				AB61E9E619CF338C005AC87F /* TCDScrollableViewController.m */,
+				AB61E9EF19D0C5EF005AC87F /* UIViewController+BaseExtention.h */,
+				AB61E9F019D0C5EF005AC87F /* UIViewController+BaseExtention.m */,
+			);
+			name = ParrentControllers;
+			sourceTree = "<group>";
+		};
+		AB61E9F219D0E026005AC87F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AB61E9F319D0E048005AC87F /* UIScrollView+TCDExtention.h */,
+				AB61E9F419D0E048005AC87F /* UIScrollView+TCDExtention.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		ABCADB1619ACF67B00E327B2 /* Parser */ = {
@@ -412,14 +448,18 @@
 			files = (
 				30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */,
 				97C35835197FD3E8008D24AC /* TCDSideMenu.m in Sources */,
+				AB61E9EE19D0C378005AC87F /* TCDTermsViewController.m in Sources */,
 				AB61E9E719CF338C005AC87F /* TCDScrollableViewController.m in Sources */,
 				30BC36AB197AD8120098F43F /* TCDProgramTypesViewController.m in Sources */,
 				30B5583D19728683007C4F80 /* TCDAppDelegate.m in Sources */,
+				AB61E9F119D0C5EF005AC87F /* UIViewController+BaseExtention.m in Sources */,
 				30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */,
+				AB61E9F519D0E048005AC87F /* UIScrollView+TCDExtention.m in Sources */,
 				30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */,
 				ABCADB2019AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m in Sources */,
 				30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */,
 				ABCADB1D19ACF83400E327B2 /* TCDPhotoAlbum.m in Sources */,
+				AB61E9EB19D0BFE7005AC87F /* TCDPrincipesViewController.m in Sources */,
 				30B5583919728683007C4F80 /* main.m in Sources */,
 				30B558751972B42C007C4F80 /* ArrayDelegate.m in Sources */,
 				30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */,
@@ -562,7 +602,7 @@
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ffc2e152-def2-4b38-ac07-fbbb3d06626c";
+				PROVISIONING_PROFILE = "74096D57-3EC7-40EE-8C6E-95C2577C1CBE";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -581,7 +621,7 @@
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ffc2e152-def2-4b38-ac07-fbbb3d06626c";
+				PROVISIONING_PROFILE = "74096D57-3EC7-40EE-8C6E-95C2577C1CBE";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

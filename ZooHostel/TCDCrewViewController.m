@@ -7,42 +7,24 @@
 //
 
 #import "TCDCrewViewController.h"
+#import "TCDPrincipesViewController.h"
 #import <RESideMenu/RESideMenu.h>
 
-NSString * const kCrewSegueIdentifier = @"CrewSegueIdentifier";
-
-@interface TCDCrewViewController ()
-
-@end
+NSString * const TCDCrewViewControllerIdentifier = @"CrewSegueIdentifier";
 
 @implementation TCDCrewViewController
 
-- (void)viewDidLoad
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [super viewDidLoad];
-    
-    // Do any additional setup after loading the view.
+    if([scrollView scrolledToBottom])
+    {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Наши принципы" style:UIBarButtonItemStylePlain target:self action:@selector(principes)];
+    }
 }
 
-- (void)didReceiveMemoryWarning
+- (void)principes
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - Navigation
-
-- (IBAction)menuBarButtonTapped:(id)sender
-{
-    [self.sideMenuViewController presentLeftMenuViewController];
-}
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDPrincipesViewControllerSegueIdentifier];
 }
 
 

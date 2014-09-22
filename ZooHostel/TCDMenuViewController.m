@@ -11,12 +11,12 @@
 #import "TCDCrewViewController.h"
 #import "TCDMainViewController.h"
 #import "TCDAboutUsViewController.h"
+#import "TCDPrincipesViewController.h"
 #import "TCDContactsViewController.h"
 #import "TCDPhotoViewController.h"
 #import "UIViewController+ReSideMenu.h"
 #import <RESideMenu/RESideMenu.h>
 
-static NSString * const kPrincipesSegueIdentifier = @"PrincipesSegueIdentifier";
 static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
 
 @interface TCDMenuViewController () <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
@@ -39,11 +39,12 @@ static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
     [super viewDidLoad];
     
     self.dataSource = @[@"Главная", @"О нас", @"Виды путевок", @"Наша команда", @"Наши принципы", @"Условия приема", @"Контакты", @"Фотографии"];
-    self.seguesSource = @[kMainSegueIdentifier, kAboutUsSegueIdentifier, kProgramTypesSegueIdentifier, kCrewSegueIdentifier, kPrincipesSegueIdentifier, kTermsSegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
+    self.seguesSource = @[kMainSegueIdentifier, TCDAboutUsViewControllerIdentifier, TCDProgramTypesViewControllerIdentifier, TCDCrewViewControllerIdentifier, TCDPrincipesViewControllerSegueIdentifier, kTermsSegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
     
     self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    
-    self.tableView.contentInset = UIEdgeInsetsMake(100, 0, 0, 0);
+    [self.tableView reloadData];
+    CGFloat topInset = (self.view.bounds.size.height - self.tableView.contentSize.height) / 2;
+    self.tableView.contentInset = UIEdgeInsetsMake(topInset, 0, 0, 0);
 }
 
 #pragma mark - UITableView

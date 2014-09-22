@@ -7,12 +7,15 @@
 //
 
 #import "TCDAboutUsViewController.h"
+#import "TCDProgramTypesViewController.h"
 #import <RESideMenu/RESideMenu.h>
 @import MapKit;
 
-NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
+NSString * const TCDAboutUsViewControllerIdentifier = @"AboutUsSegueIdentifier";
 
 @interface TCDAboutUsViewController ()
+
+@property (nonatomic, strong) UIBarButtonItem *ourLocationBarButtonItem;
 
 @end
 
@@ -22,13 +25,8 @@ NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
 {
     [super viewDidLoad];
     
+    self.ourLocationBarButtonItem = self.navigationItem.rightBarButtonItem;
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)ourLocation:(id)sender
@@ -69,19 +67,18 @@ NSString * const kAboutUsSegueIdentifier = @"AboutUsSegueIdentifier";
     }
 }
 
-#pragma mark - Navigation
-
-- (IBAction)menuBarButtonTapped:(id)sender
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [self.sideMenuViewController presentLeftMenuViewController];
+    if ([scrollView scrolledToBottom]) {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Виды путевок" style:UIBarButtonItemStyleBordered target:self action:@selector(programTypes)];
+    } else {
+        self.navigationItem.rightBarButtonItem = self.ourLocationBarButtonItem;
+    }
 }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)programTypes
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDProgramTypesViewControllerIdentifier];
 }
-
 
 @end

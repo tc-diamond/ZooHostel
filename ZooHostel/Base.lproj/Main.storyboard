@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -46,7 +45,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="h0O-0T-G6i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="egw-jD-R1h">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -71,7 +70,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Contacts" id="r73-tf-qjo">
                         <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="qZO-Rc-OSC">
-                            <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="kco-gg-UVt" id="fwz-iz-gKm"/>
                             </connections>
@@ -132,7 +131,6 @@
         <scene sceneID="om4-2s-hlt">
             <objects>
                 <navigationController storyboardIdentifier="PhotoSegueIdentifier" definesPresentationContext="YES" id="DHI-r8-5z5" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="rAi-3i-par">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -142,7 +140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Api-cN-Wnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="2136"/>
+            <point key="canvasLocation" x="912" y="2119"/>
         </scene>
         <!--Photo-->
         <scene sceneID="a4t-kw-Swd">
@@ -151,7 +149,7 @@
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="fsS-NH-N6m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.94844439491280352" green="0.96736156940460205" blue="0.91156406231574816" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="K5s-sg-URF">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -192,7 +190,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-K7-VXW">
                                             <rect key="frame" x="8" y="2" width="272" height="21"/>
                                             <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -213,7 +211,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Photo" id="Qft-UO-kC8">
                         <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="tcc-Le-arP">
-                            <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="C4L-RP-H7K" id="8mU-93-gVd"/>
                             </connections>
@@ -222,54 +220,12 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soW-VC-6hW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1375" y="2124"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="IF9-nF-Q2p">
-            <objects>
-                <navigationController storyboardIdentifier="CrewSegueIdentifier" definesPresentationContext="YES" id="KqV-vP-OPb" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="bFD-CW-rap">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="OGg-J1-jaK" kind="relationship" relationship="rootViewController" id="fc9-MZ-efN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="48C-Zk-RRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2328" y="520"/>
-        </scene>
-        <!--Наша команда-->
-        <scene sceneID="oeE-7B-m4f">
-            <objects>
-                <viewController id="OGg-J1-jaK" customClass="TCDCrewViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rzb-T5-x7Z"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dca-0G-tv0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4qc-YG-uCA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Наша команда" id="ibG-Jl-bCT">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="tZZ-2z-9eN">
-                            <connections>
-                                <action selector="menuBarButtonTapped:" destination="OGg-J1-jaK" id="NDY-Li-4C2"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E2u-tf-jiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2752" y="520"/>
+            <point key="canvasLocation" x="1364" y="2119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VIT-TG-QkA">
             <objects>
                 <navigationController storyboardIdentifier="MainSegueIdentifier" definesPresentationContext="YES" id="Pgj-lT-7nu" sceneMemberID="viewController">
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="qBR-CT-xda">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -297,22 +253,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaR-Zv-oc0">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="625"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="517"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-L5-ysE">
-                                                <rect key="frame" x="16" y="147" width="288" height="227"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-L5-ysE">
+                                                <rect key="frame" x="16" y="155" width="288" height="159"/>
                                                 <string key="text">"Дача - Удача" с 2007 года принимает на загородный отдых собак, кошек и других домашних любимцев.
 Зоогостиница дает возможность Вам - спокойно путешествовать, а Вашим питомцам - комфортно отдыхать.</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686274509803" green="0.20784313725490197" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372549019607" green="0.20784313725490197" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-CO-OXv">
-                                                <rect key="frame" x="16" y="382" width="288" height="227"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-CO-OXv">
+                                                <rect key="frame" x="16" y="322" width="288" height="179"/>
                                                 <string key="text">"Дача - Удача" серьезно относится к каникулам Вашего любимца и для каждого питомца проводит специально разработанную программу адаптации к новым условиям.
 Планируя любую поездку, Вы больше не будете беспокоиться об отдыхе Вашего любимца.</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686274509803" green="0.20784313725490197" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372549019607" green="0.20784313725490197" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_top" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-Ef-gpi">
@@ -330,9 +286,8 @@
                                             <constraint firstItem="DiW-CO-OXv" firstAttribute="top" secondItem="BNw-L5-ysE" secondAttribute="bottom" constant="8" id="ZDF-2s-6Fm"/>
                                             <constraint firstAttribute="trailing" secondItem="BNw-L5-ysE" secondAttribute="trailing" constant="16" id="Zmw-Sc-gbT"/>
                                             <constraint firstItem="k5a-Ef-gpi" firstAttribute="top" secondItem="iaR-Zv-oc0" secondAttribute="top" id="lu7-TM-9YU"/>
-                                            <constraint firstAttribute="height" priority="250" constant="118" id="sLb-Pr-Wrj"/>
                                             <constraint firstAttribute="bottom" secondItem="DiW-CO-OXv" secondAttribute="bottom" constant="16" id="uVu-R0-d41"/>
-                                            <constraint firstItem="BNw-L5-ysE" firstAttribute="top" secondItem="k5a-Ef-gpi" secondAttribute="bottom" constant="8" id="yEi-Ns-Fxb"/>
+                                            <constraint firstItem="BNw-L5-ysE" firstAttribute="top" secondItem="k5a-Ef-gpi" secondAttribute="bottom" constant="16" id="yEi-Ns-Fxb"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -358,7 +313,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Главная" id="aTv-7h-BHb">
                         <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="0fd-Ng-Kdc">
-                            <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="d6h-aB-Vbx" id="0m9-6t-Qrb"/>
                             </connections>
@@ -404,10 +359,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmU-Az-gWy">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1193"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="901"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="zCe-M1-JSN">
-                                                <rect key="frame" x="16" y="8" width="288" height="530"/>
+                                                <rect key="frame" x="16" y="16" width="288" height="397"/>
                                                 <string key="text">В путевку «Стандарт» входят следующие услуги:
 индивидуальная адаптационная программа для будущих дачников
 проживание в просторных комфортабельных номерах;
@@ -419,12 +374,12 @@
 прогулки на собственной игровой площадке;
 наблюдение и своевременная помощь ветеринара, в случае необходимости;
 фото отчет об отдыхе питомца (5-7 фото)</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="Y1G-B8-Kya">
-                                                <rect key="frame" x="16" y="546" width="288" height="555"/>
+                                                <rect key="frame" x="16" y="421" width="288" height="416"/>
                                                 <string key="text">Пакет «Люкс» - это дополнительный сервис к «Стандартной» путевке:
 (Вы можете выбрать любую услугу в дополнение к "Стандартной" путевке)
 -санаторно-курортное пребывание (комплексное восстановление, социализация, коррекция поведения, веса);
@@ -432,14 +387,14 @@
 -комплексные консультации ветеринарного врача;
 -индивидуальные занятия (тестовые или тренировочные) по программе «Городская собака» с профессиональным инструктором; 
 -зоотакси Удачное;</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Более подробную информацию читайте в нашей группе вконтакте." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-TF-eT2" customClass="TTTAttributedLabel">
-                                                <rect key="frame" x="16" y="1109" width="288" height="76"/>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="frame" x="16" y="845" width="288" height="40"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -448,13 +403,11 @@
                                             <constraint firstItem="Y1G-B8-Kya" firstAttribute="top" secondItem="zCe-M1-JSN" secondAttribute="bottom" constant="8" id="1bB-H0-RFS"/>
                                             <constraint firstAttribute="trailing" secondItem="zCe-M1-JSN" secondAttribute="trailing" constant="16" id="5QJ-FK-bTk"/>
                                             <constraint firstItem="Y1G-B8-Kya" firstAttribute="leading" secondItem="TmU-Az-gWy" secondAttribute="leading" constant="16" id="6ef-TW-b2y"/>
-                                            <constraint firstAttribute="bottom" secondItem="JWU-TF-eT2" secondAttribute="bottom" constant="8" id="7e5-Rs-QpH"/>
+                                            <constraint firstAttribute="bottom" secondItem="JWU-TF-eT2" secondAttribute="bottom" constant="16" id="7e5-Rs-QpH"/>
                                             <constraint firstItem="zCe-M1-JSN" firstAttribute="leading" secondItem="TmU-Az-gWy" secondAttribute="leading" constant="16" id="90b-EH-43L"/>
-                                            <constraint firstItem="JWU-TF-eT2" firstAttribute="top" secondItem="Y1G-B8-Kya" secondAttribute="bottom" constant="8" id="TGl-Oy-yjY"/>
-                                            <constraint firstItem="zCe-M1-JSN" firstAttribute="top" secondItem="TmU-Az-gWy" secondAttribute="top" constant="8" id="UT3-SS-o1R"/>
+                                            <constraint firstItem="zCe-M1-JSN" firstAttribute="top" secondItem="TmU-Az-gWy" secondAttribute="top" constant="16" id="UT3-SS-o1R"/>
                                             <constraint firstAttribute="trailing" secondItem="Y1G-B8-Kya" secondAttribute="trailing" constant="16" id="ZcF-Zh-F9l"/>
                                             <constraint firstAttribute="width" constant="320" id="aUF-Q8-8Cs"/>
-                                            <constraint firstAttribute="height" constant="1193" id="cVi-4k-Hjj"/>
                                             <constraint firstItem="JWU-TF-eT2" firstAttribute="top" secondItem="Y1G-B8-Kya" secondAttribute="bottom" constant="8" id="ft4-Xz-joZ"/>
                                             <constraint firstAttribute="trailing" secondItem="JWU-TF-eT2" secondAttribute="trailing" constant="16" id="i0S-gX-OJc"/>
                                             <constraint firstItem="JWU-TF-eT2" firstAttribute="leading" secondItem="TmU-Az-gWy" secondAttribute="leading" constant="16" id="paF-pU-tug"/>
@@ -483,7 +436,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Виды Путевок" id="Dla-in-DnX">
                         <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="WF6-ch-Mzg">
-                            <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="q3O-X2-khb" id="w9c-6m-Nyl"/>
                             </connections>
@@ -530,56 +483,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-nL-ECd">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="630"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="493"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="Sy0-cY-Qkr">
-                                                <rect key="frame" x="16" y="8" width="288" height="26"/>
+                                                <rect key="frame" x="16" y="16" width="288" height="20"/>
                                                 <string key="text">Наш девиз:
 </string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="«Вы – спокойно путешествуете, Ваши любимцы – комфортно отдыхают»" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-06-1yQ">
-                                                <rect key="frame" x="16" y="42" width="288" height="76"/>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="16" y="44" width="288" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-zb-lxN">
-                                                <rect key="frame" x="16" y="126" width="288" height="303"/>
+                                                <rect key="frame" x="16" y="112" width="288" height="218"/>
                                                 <string key="text">Наша загородная зоогостиница «Дача - Удача» принимает на отдых домашних питомцев с 2007 года. Многие питомцы, однажды отдохнувшие на «Даче - Удаче», стали нашими постоянными гостями.
 Наша зоогостиница находится на Приозерском шоссе, в 10 км от Санкт-Петербурга, в экологически чистом и красивом местечке.</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-RL-xJ5">
-                                                <rect key="frame" x="16" y="437" width="288" height="177"/>
+                                                <rect key="frame" x="16" y="338" width="288" height="139"/>
                                                 <string key="text">Для удобства и спокойствия владельцев наших "дачников", а также для комфортного и с пользой проведенного отдыха их любимцев, "Дача - Удача" рада предложить два вида путевок: «Стандарт» и «Люкс».</string>
-                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="20"/>
-                                                <color key="textColor" red="0.0039215686269999999" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-QM-KqZ">
-                                                <rect key="frame" x="113" y="399" width="35" height="35"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="Zwc-aS-r5b"/>
-                                                    <constraint firstAttribute="width" constant="35" id="x5d-W8-FKF"/>
-                                                </constraints>
-                                                <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                                                <state key="normal" title="Button" image="location">
-                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="ourLocation:" destination="3HY-yc-apl" eventType="touchUpInside" id="UwN-uY-cBX"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="qSs-RL-xJ5" secondAttribute="bottom" priority="750" constant="16" id="1B2-55-uG4"/>
+                                            <constraint firstAttribute="bottom" secondItem="qSs-RL-xJ5" secondAttribute="bottom" constant="16" id="1B2-55-uG4"/>
                                             <constraint firstItem="Sy0-cY-Qkr" firstAttribute="leading" secondItem="bnn-nL-ECd" secondAttribute="leading" constant="16" id="1Hs-ek-s3U"/>
                                             <constraint firstItem="aVz-06-1yQ" firstAttribute="top" secondItem="Sy0-cY-Qkr" secondAttribute="bottom" constant="8" id="2O3-Tw-Ctl"/>
                                             <constraint firstAttribute="trailing" secondItem="aVz-06-1yQ" secondAttribute="trailing" constant="16" id="2hO-Gb-u3D"/>
@@ -588,14 +526,12 @@
                                             <constraint firstItem="qSs-RL-xJ5" firstAttribute="leading" secondItem="bnn-nL-ECd" secondAttribute="leading" constant="16" id="GKg-2h-yUO"/>
                                             <constraint firstItem="hkt-zb-lxN" firstAttribute="top" secondItem="aVz-06-1yQ" secondAttribute="bottom" constant="8" id="ILv-mZ-Ivb"/>
                                             <constraint firstItem="qSs-RL-xJ5" firstAttribute="top" secondItem="hkt-zb-lxN" secondAttribute="bottom" constant="8" id="Lld-JA-0r6"/>
-                                            <constraint firstItem="VLh-QM-KqZ" firstAttribute="leading" secondItem="hkt-zb-lxN" secondAttribute="leading" constant="97" id="OgB-Qf-NYg"/>
                                             <constraint firstItem="hkt-zb-lxN" firstAttribute="leading" secondItem="bnn-nL-ECd" secondAttribute="leading" constant="16" id="Pep-kc-PJI"/>
-                                            <constraint firstItem="Sy0-cY-Qkr" firstAttribute="top" secondItem="bnn-nL-ECd" secondAttribute="top" constant="8" id="QMV-1o-WAt"/>
+                                            <constraint firstItem="Sy0-cY-Qkr" firstAttribute="top" secondItem="bnn-nL-ECd" secondAttribute="top" constant="16" id="QMV-1o-WAt"/>
                                             <constraint firstAttribute="trailing" secondItem="hkt-zb-lxN" secondAttribute="trailing" constant="16" id="SMh-uV-oGg"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="132" id="WEp-g9-Vsn"/>
                                             <constraint firstAttribute="width" constant="320" id="s7S-ay-c6M"/>
                                             <constraint firstAttribute="trailing" secondItem="qSs-RL-xJ5" secondAttribute="trailing" constant="16" id="wPf-BX-hcR"/>
-                                            <constraint firstItem="VLh-QM-KqZ" firstAttribute="bottom" secondItem="hkt-zb-lxN" secondAttribute="bottom" constant="5" id="xlh-Ax-QUK"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -626,10 +562,23 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="О нас" id="Bkj-BX-Sk4">
                         <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="ZJX-oz-lrz">
-                            <color key="tintColor" red="0.019607843137254902" green="0.51764705882352946" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="menuBarButtonTapped:" destination="3HY-yc-apl" id="dFk-79-lhY"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="YEQ-rw-GbY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VLh-QM-KqZ">
+                                <rect key="frame" x="254" y="299" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.019607843140000001" green="0.51764705879999995" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button" image="location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ourLocation:" destination="3HY-yc-apl" eventType="touchUpInside" id="UwN-uY-cBX"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -640,9 +589,303 @@
             </objects>
             <point key="canvasLocation" x="1364" y="156"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MyC-vc-NLY">
+            <objects>
+                <navigationController storyboardIdentifier="CrewSegueIdentifier" definesPresentationContext="YES" id="1br-N8-Wab" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cV0-Jp-Hnf">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="X8A-dr-P9x" kind="relationship" relationship="rootViewController" id="gy5-04-EFI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsw-qN-fhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="657"/>
+        </scene>
+        <!--Наша команда-->
+        <scene sceneID="Fmc-6S-rBV">
+            <objects>
+                <viewController id="X8A-dr-P9x" customClass="TCDCrewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N86-O2-QZI"/>
+                        <viewControllerLayoutGuide type="bottom" id="8HZ-E8-G4l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YI8-ST-cSo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dcs-gT-yTr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-1J-0wb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="YcB-dI-GCa">
+                                                <rect key="frame" x="16" y="16" width="288" height="139"/>
+                                                <string key="text">Зоогостиница «Дача –Удача» на постоянной основе сотрудничает с квалифицированными специалистами:  -ветеринарным врачом,  -инструктором - дрессировщиком,  -грумером.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="0AL-M5-GGs"/>
+                                            <constraint firstItem="YcB-dI-GCa" firstAttribute="leading" secondItem="gkm-1J-0wb" secondAttribute="leading" constant="16" id="6wf-Go-L4V"/>
+                                            <constraint firstAttribute="trailing" secondItem="YcB-dI-GCa" secondAttribute="trailing" constant="16" id="YLF-qR-jbn"/>
+                                            <constraint firstItem="YcB-dI-GCa" firstAttribute="top" secondItem="gkm-1J-0wb" secondAttribute="top" constant="16" id="aJW-R3-fGZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="YcB-dI-GCa" secondAttribute="bottom" constant="16" id="vTT-yB-6LB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gkm-1J-0wb" secondAttribute="bottom" id="1NA-2i-09L"/>
+                                    <constraint firstAttribute="trailing" secondItem="gkm-1J-0wb" secondAttribute="trailing" id="MPj-gA-DBi"/>
+                                    <constraint firstItem="gkm-1J-0wb" firstAttribute="leading" secondItem="dcs-gT-yTr" secondAttribute="leading" id="OPx-D4-M19"/>
+                                    <constraint firstItem="gkm-1J-0wb" firstAttribute="top" secondItem="dcs-gT-yTr" secondAttribute="top" id="r4x-9L-nJ1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="X8A-dr-P9x" id="Od3-EQ-BgG"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dcs-gT-yTr" firstAttribute="leading" secondItem="YI8-ST-cSo" secondAttribute="leading" id="2A7-Nc-Wfr"/>
+                            <constraint firstItem="8HZ-E8-G4l" firstAttribute="top" secondItem="dcs-gT-yTr" secondAttribute="bottom" id="EUb-Rg-pL8"/>
+                            <constraint firstItem="dcs-gT-yTr" firstAttribute="top" secondItem="N86-O2-QZI" secondAttribute="bottom" id="Rd2-vs-WZv"/>
+                            <constraint firstAttribute="trailing" secondItem="dcs-gT-yTr" secondAttribute="trailing" id="dp5-2K-hwT"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Наша команда" id="3KB-uz-ooU">
+                        <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="q9Z-Du-0Ov">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="X8A-dr-P9x" id="8ld-cY-6bD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="dcs-gT-yTr" id="xh9-9n-izF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hh-Yn-CdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2204" y="657"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q9q-TI-Coh">
+            <objects>
+                <navigationController storyboardIdentifier="PrincipesSegueIdentifier" definesPresentationContext="YES" id="0jz-qn-hRS" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="TaP-KA-K7E">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IpZ-L6-Btb" kind="relationship" relationship="rootViewController" id="EUJ-lM-PA4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVr-5j-9wY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="1352"/>
+        </scene>
+        <!--Наши принципы-->
+        <scene sceneID="P0F-kv-13r">
+            <objects>
+                <viewController id="IpZ-L6-Btb" customClass="TCDProgramTypesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hfy-Bi-LSi"/>
+                        <viewControllerLayoutGuide type="bottom" id="xLX-KN-aRs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dm6-yh-Gt1">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3K-3J-nCy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-sU-Yh3">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="3tY-lJ-7FG">
+                                                <rect key="frame" x="16" y="16" width="288" height="179"/>
+                                                <string key="text">1. Мы НЕ работаем по принципу "камеры хранения". 
+2. Мы обязательно проводим перед каникулами предварительную адаптационную программу для каждой собаки. 
+3. Наши приоритеты: ответственность, безопасность, комфорт. </string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наша миссия" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="vf6-dX-JMx">
+                                                <rect key="frame" x="16" y="203" width="288" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="4SK-BM-Uf2" customClass="TTTAttributedLabel">
+                                                <rect key="frame" x="16" y="231" width="288" height="298"/>
+                                                <string key="text">1. Мы работаем, чтобы обеспечить владельцам наших дачников спокойный отдых, а их любимцам - безопасное и комфортное пребывание на зоо даче. 
+2. Мы предлагаем владельцам и их питомцам самый разнообразный и востребованный сервис. 
+3. Мы формируем правильное и грамотное отношение владельцев к такой услуге как зоогостиница. 
+4. Мы пропагандируем ответственный подход к подготовке питомца перед отдыхом в зоогостинице. </string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="3tY-lJ-7FG" firstAttribute="top" secondItem="XGi-sU-Yh3" secondAttribute="top" constant="16" id="EkM-tn-zRg"/>
+                                            <constraint firstAttribute="trailing" secondItem="3tY-lJ-7FG" secondAttribute="trailing" constant="16" id="JUl-I0-SAZ"/>
+                                            <constraint firstAttribute="width" constant="320" id="Kgo-9T-PxV"/>
+                                            <constraint firstAttribute="bottom" secondItem="4SK-BM-Uf2" secondAttribute="bottom" constant="16" id="LGr-mm-21w"/>
+                                            <constraint firstItem="vf6-dX-JMx" firstAttribute="leading" secondItem="XGi-sU-Yh3" secondAttribute="leading" constant="16" id="Rtm-eu-ZXx"/>
+                                            <constraint firstItem="3tY-lJ-7FG" firstAttribute="leading" secondItem="XGi-sU-Yh3" secondAttribute="leading" constant="16" id="cI6-sg-kRS"/>
+                                            <constraint firstItem="4SK-BM-Uf2" firstAttribute="leading" secondItem="XGi-sU-Yh3" secondAttribute="leading" constant="16" id="dEP-dW-6oo"/>
+                                            <constraint firstItem="vf6-dX-JMx" firstAttribute="top" secondItem="3tY-lJ-7FG" secondAttribute="bottom" constant="8" id="oPF-hr-lGO"/>
+                                            <constraint firstAttribute="trailing" secondItem="vf6-dX-JMx" secondAttribute="trailing" constant="16" id="wFG-u8-bKD"/>
+                                            <constraint firstItem="4SK-BM-Uf2" firstAttribute="top" secondItem="vf6-dX-JMx" secondAttribute="bottom" constant="8" id="wtx-rA-jZI"/>
+                                            <constraint firstAttribute="trailing" secondItem="4SK-BM-Uf2" secondAttribute="trailing" constant="16" id="yPu-nv-7Z1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XGi-sU-Yh3" secondAttribute="bottom" id="3GU-j0-s2r"/>
+                                    <constraint firstAttribute="trailing" secondItem="XGi-sU-Yh3" secondAttribute="trailing" id="CXV-cH-p5f"/>
+                                    <constraint firstItem="XGi-sU-Yh3" firstAttribute="leading" secondItem="P3K-3J-nCy" secondAttribute="leading" id="NdV-Be-boe"/>
+                                    <constraint firstItem="XGi-sU-Yh3" firstAttribute="top" secondItem="P3K-3J-nCy" secondAttribute="top" id="heF-Ay-dPV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="IpZ-L6-Btb" id="1IA-X9-Jzd"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="P3K-3J-nCy" firstAttribute="leading" secondItem="Dm6-yh-Gt1" secondAttribute="leading" id="DNO-6t-git"/>
+                            <constraint firstItem="xLX-KN-aRs" firstAttribute="top" secondItem="P3K-3J-nCy" secondAttribute="bottom" id="REo-AR-LIJ"/>
+                            <constraint firstAttribute="trailing" secondItem="P3K-3J-nCy" secondAttribute="trailing" id="oYk-Uj-mgj"/>
+                            <constraint firstItem="P3K-3J-nCy" firstAttribute="top" secondItem="Hfy-Bi-LSi" secondAttribute="bottom" id="zAA-7i-JE7"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Наши принципы" id="Etz-Bl-AoR">
+                        <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="huU-2f-Lm1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="IpZ-L6-Btb" id="zfo-St-leN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contactVKLabel" destination="4SK-BM-Uf2" id="8Zv-id-wW9"/>
+                        <outlet property="scrollView" destination="P3K-3J-nCy" id="ORD-dE-c9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jy-Q8-4l8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2204" y="1352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0KD-f9-jnJ">
+            <objects>
+                <navigationController storyboardIdentifier="TermsSegueIdentifier" definesPresentationContext="YES" id="nVV-Gw-Xde" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="yl0-Nb-8DJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qPR-dx-B1O" kind="relationship" relationship="rootViewController" id="mVM-pp-VPC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb6-W6-G4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="1980"/>
+        </scene>
+        <!--Условия приема-->
+        <scene sceneID="kPb-3a-6tG">
+            <objects>
+                <viewController id="qPR-dx-B1O" customClass="TCDCrewViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tL2-HR-hM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="grj-Jc-SuN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="68i-Rr-lYy">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7V2-PK-ban">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ML4-pO-wQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="5Yd-2C-Kiw">
+                                                <rect key="frame" x="16" y="16" width="288" height="278"/>
+                                                <mutableString key="text">Для всех питомцев:
+Наличие у питомца вакцинации и обработок, зафиксированных в ветпаспорте и сделанных по графику. 
+
+Для собак:
+Предварительное знакомство (визит владельца и его питомца в зоогостиницу) 
+Гостевой день (бесплатное пребывание питомца в зоогостинице в течение суток, включая ночевку)</mutableString>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.20784313730000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="5Yd-2C-Kiw" firstAttribute="leading" secondItem="ML4-pO-wQc" secondAttribute="leading" constant="16" id="1Yl-Nq-H2g"/>
+                                            <constraint firstAttribute="width" constant="320" id="M0M-1s-lhq"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Yd-2C-Kiw" secondAttribute="bottom" constant="16" id="RNC-Mc-6Id"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Yd-2C-Kiw" secondAttribute="trailing" constant="16" id="cNT-uq-f5D"/>
+                                            <constraint firstItem="5Yd-2C-Kiw" firstAttribute="top" secondItem="ML4-pO-wQc" secondAttribute="top" constant="16" id="w1j-U0-uVV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ML4-pO-wQc" firstAttribute="top" secondItem="7V2-PK-ban" secondAttribute="top" id="RZQ-gd-LXD"/>
+                                    <constraint firstAttribute="bottom" secondItem="ML4-pO-wQc" secondAttribute="bottom" id="Rin-k2-Ljz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ML4-pO-wQc" secondAttribute="trailing" id="cJY-iN-iZr"/>
+                                    <constraint firstItem="ML4-pO-wQc" firstAttribute="leading" secondItem="7V2-PK-ban" secondAttribute="leading" id="mSF-Xd-9DM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="qPR-dx-B1O" id="KYg-C5-5qQ"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94844439489999999" green="0.96736156939999995" blue="0.91156406229999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="grj-Jc-SuN" firstAttribute="top" secondItem="7V2-PK-ban" secondAttribute="bottom" id="4wU-Ss-Q6D"/>
+                            <constraint firstItem="7V2-PK-ban" firstAttribute="leading" secondItem="68i-Rr-lYy" secondAttribute="leading" id="QHo-Gm-6wL"/>
+                            <constraint firstItem="7V2-PK-ban" firstAttribute="top" secondItem="tL2-HR-hM9" secondAttribute="bottom" id="Xze-1c-cod"/>
+                            <constraint firstAttribute="trailing" secondItem="7V2-PK-ban" secondAttribute="trailing" id="oeg-hg-eYj"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Условия приема" id="BGx-HF-oh3">
+                        <barButtonItem key="leftBarButtonItem" image="sidemenu_icon" id="jKd-Jg-QFc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="menuBarButtonTapped:" destination="qPR-dx-B1O" id="uJU-92-4T6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="7V2-PK-ban" id="WIF-Db-ALk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMe-aI-2RP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2204" y="1980"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="location" width="128" height="128"/>
+        <image name="location" width="250" height="250"/>
         <image name="menu_top" width="320" height="139"/>
         <image name="sidemenu_icon" width="20" height="20"/>
     </resources>

@@ -7,6 +7,7 @@
 //
 
 #import "TCDMainViewController.h"
+#import "TCDAboutUsViewController.h"
 #import <RESideMenu/RESideMenu.h>
 
 NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
@@ -17,26 +18,25 @@ NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 
 @implementation TCDMainViewController
 
-#pragma mark - Navigation
-
-- (IBAction)menuBarButtonTapped:(id)sender
-{
-    [self.sideMenuViewController presentLeftMenuViewController];
-}
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if (scrollView.contentOffset.y < 0) {
         scrollView.contentOffset = CGPointZero;
     }
-    [super scrollViewDidScroll:scrollView];
+    
+    if (self.navigationItem.rightBarButtonItem) {
+        return;
+    }
+    
+    if([scrollView scrolledToBottom])
+    {
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"О Нас" style:UIBarButtonItemStylePlain target:self action:@selector(aboutUs)];
+    }
 }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)aboutUs
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDAboutUsViewControllerIdentifier];
 }
 
 @end
