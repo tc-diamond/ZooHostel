@@ -13,20 +13,16 @@
 
 NSString * const TCDAboutUsViewControllerIdentifier = @"AboutUsSegueIdentifier";
 
-@interface TCDAboutUsViewController ()
-
-@property (nonatomic, strong) UIBarButtonItem *ourLocationBarButtonItem;
-
-@end
-
 @implementation TCDAboutUsViewController
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewDidAppear:animated];
     
-    self.ourLocationBarButtonItem = self.navigationItem.rightBarButtonItem;
-    // Do any additional setup after loading the view.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.view setNeedsLayout];
+        [self.view layoutIfNeeded];
+    });
 }
 
 - (IBAction)ourLocation:(id)sender
@@ -64,15 +60,6 @@ NSString * const TCDAboutUsViewControllerIdentifier = @"AboutUsSegueIdentifier";
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ошибка" message:@"Не удается открыть карты Apple" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
-    }
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    if ([scrollView scrolledToBottom]) {
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Виды путевок" style:UIBarButtonItemStyleBordered target:self action:@selector(programTypes)];
-    } else {
-        self.navigationItem.rightBarButtonItem = self.ourLocationBarButtonItem;
     }
 }
 

@@ -17,6 +17,7 @@
 @property (nonatomic, retain) UIViewController* controller;
 @property (nonatomic, retain) UIViewController* selfController;
 @property (nonatomic, retain) UIImageView* originalImage;
+@property (nonatomic, assign) BOOL aboutToClose;
 
 @end
 
@@ -231,6 +232,9 @@ static CGFloat s_backgroundScale = 0.8f;
     {
         anEdgeInset.left = (scrollerBounds.size.width - innerFrame.size.width) / 2;
         anEdgeInset.right = -anEdgeInset.left; // I don't know why this needs to be negative, but that's what works
+        self.aboutToClose = YES;
+    } else {
+        self.aboutToClose = NO;
     }
     if ( scrollerBounds.size.height > innerFrame.size.height )
     {
@@ -242,6 +246,13 @@ static CGFloat s_backgroundScale = 0.8f;
         scrollView.contentOffset = myScrollViewOffset;
         scrollView.contentInset = anEdgeInset;
     }];
+}
+
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
+{
+    if (self.aboutToClose) {
+        [self onBackgroundTap];
+    }
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface TCDMenuViewController : UIViewController
 
+- (void)selectNext;
+
 @end

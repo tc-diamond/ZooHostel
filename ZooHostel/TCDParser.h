@@ -14,5 +14,6 @@
 @interface TCDParser : NSObject
 
 + (NSArray *)parseStringToPhotoAlbums:(NSString *)parsingString;
++ (NSArray *)photosFromParsingString:(NSString *)string;
 
 @end

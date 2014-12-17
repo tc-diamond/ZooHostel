@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TCDPhotoCollectionViewHeader : UICollectionViewCell
+@interface TCDPhotoCollectionViewHeader : UICollectionReusableView
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 

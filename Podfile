@@ -1,5 +1,5 @@
 platform :ios, '7.1'
-pod 'RESideMenu', '~> 4.0.5'
+pod 'RESideMenu'
 pod 'AFNetworking'
 pod 'SVProgressHUD'
 pod 'GRKBlurView'

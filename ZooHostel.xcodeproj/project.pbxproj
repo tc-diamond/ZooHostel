@@ -25,7 +25,6 @@
 		30B5586C19729BED007C4F80 /* TCDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5586B19729BED007C4F80 /* TCDPhotoViewController.m */; };
 		30B558721972B34E007C4F80 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B558711972B34E007C4F80 /* ArrayDataSource.m */; };
 		30B558751972B42C007C4F80 /* ArrayDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B558741972B42C007C4F80 /* ArrayDelegate.m */; };
-		30B558781972B6DF007C4F80 /* Photo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B558771972B6DF007C4F80 /* Photo.plist */; };
 		30B5587C1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */; };
 		30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5587E19732584007C4F80 /* TCDMainViewController.m */; };
 		30BC36A8197AD7560098F43F /* TCDAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC36A7197AD7560098F43F /* TCDAboutUsViewController.m */; };
@@ -39,10 +38,13 @@
 		AB61E9EE19D0C378005AC87F /* TCDTermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9ED19D0C378005AC87F /* TCDTermsViewController.m */; };
 		AB61E9F119D0C5EF005AC87F /* UIViewController+BaseExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9F019D0C5EF005AC87F /* UIViewController+BaseExtention.m */; };
 		AB61E9F519D0E048005AC87F /* UIScrollView+TCDExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61E9F419D0E048005AC87F /* UIScrollView+TCDExtention.m */; };
+		AB85B61619E6EB5D00A0D224 /* TCDContact.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85B61519E6EB5D00A0D224 /* TCDContact.m */; };
+		AB85B61919E6FA2900A0D224 /* TCDContactCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85B61819E6FA2900A0D224 /* TCDContactCollectionViewCell.m */; };
 		ABCADB1519ACF63E00E327B2 /* TCDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1419ACF63E00E327B2 /* TCDParser.m */; };
 		ABCADB1A19ACF72700E327B2 /* TCDPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1919ACF72700E327B2 /* TCDPhoto.m */; };
 		ABCADB1D19ACF83400E327B2 /* TCDPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */; };
 		ABCADB2019AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */; };
+		ABD5848E19D223D500E01EB3 /* TCDCharityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5848D19D223D500E01EB3 /* TCDCharityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12E49EBAAAF84759A864418E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1757E03BD9F7844E02329D7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		30B5582919728683007C4F80 /* ZooHostel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooHostel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B5582C19728683007C4F80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30B5582E19728683007C4F80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,7 +86,6 @@
 		30B558711972B34E007C4F80 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		30B558731972B42C007C4F80 /* ArrayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayDelegate.h; sourceTree = "<group>"; };
 		30B558741972B42C007C4F80 /* ArrayDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDelegate.m; sourceTree = "<group>"; };
-		30B558771972B6DF007C4F80 /* Photo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photo.plist; sourceTree = "<group>"; };
 		30B5587A1972CA25007C4F80 /* TCDPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		30B5587D19732584007C4F80 /* TCDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDMainViewController.h; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		30BC36C119803AF00098F43F /* EXPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPhotoViewer.h; sourceTree = "<group>"; };
 		30BC36C219803AF00098F43F /* EXPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPhotoViewer.m; sourceTree = "<group>"; };
 		37F7EA9441914E34859D685F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		784FECF4EFDA60041FB32655 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97C35833197FD3E8008D24AC /* TCDSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDSideMenu.h; sourceTree = "<group>"; };
 		97C35834197FD3E8008D24AC /* TCDSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDSideMenu.m; sourceTree = "<group>"; };
 		AB61E9E519CF338C005AC87F /* TCDScrollableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDScrollableViewController.h; sourceTree = "<group>"; };
@@ -110,6 +112,10 @@
 		AB61E9F019D0C5EF005AC87F /* UIViewController+BaseExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseExtention.m"; sourceTree = "<group>"; };
 		AB61E9F319D0E048005AC87F /* UIScrollView+TCDExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TCDExtention.h"; sourceTree = "<group>"; };
 		AB61E9F419D0E048005AC87F /* UIScrollView+TCDExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TCDExtention.m"; sourceTree = "<group>"; };
+		AB85B61419E6EB5D00A0D224 /* TCDContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDContact.h; sourceTree = "<group>"; };
+		AB85B61519E6EB5D00A0D224 /* TCDContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDContact.m; sourceTree = "<group>"; };
+		AB85B61719E6FA2900A0D224 /* TCDContactCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDContactCollectionViewCell.h; sourceTree = "<group>"; };
+		AB85B61819E6FA2900A0D224 /* TCDContactCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDContactCollectionViewCell.m; sourceTree = "<group>"; };
 		ABCADB1319ACF63E00E327B2 /* TCDParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDParser.h; sourceTree = "<group>"; };
 		ABCADB1419ACF63E00E327B2 /* TCDParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDParser.m; sourceTree = "<group>"; };
 		ABCADB1819ACF72700E327B2 /* TCDPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhoto.h; sourceTree = "<group>"; };
@@ -118,6 +124,8 @@
 		ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoAlbum.m; sourceTree = "<group>"; };
 		ABCADB1E19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDPhotoCollectionViewHeader.h; sourceTree = "<group>"; };
 		ABCADB1F19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDPhotoCollectionViewHeader.m; sourceTree = "<group>"; };
+		ABD5848C19D223D500E01EB3 /* TCDCharityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDCharityViewController.h; sourceTree = "<group>"; };
+		ABD5848D19D223D500E01EB3 /* TCDCharityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCDCharityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +160,7 @@
 				30B5585119728683007C4F80 /* ZooHostelTests */,
 				30B5582B19728683007C4F80 /* Frameworks */,
 				30B5582A19728683007C4F80 /* Products */,
-				12E49EBAAAF84759A864418E /* Pods.xcconfig */,
+				DE4BFEA76992087C4E87027E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +212,8 @@
 				AB61E9EA19D0BFE7005AC87F /* TCDPrincipesViewController.m */,
 				AB61E9EC19D0C378005AC87F /* TCDTermsViewController.h */,
 				AB61E9ED19D0C378005AC87F /* TCDTermsViewController.m */,
+				ABD5848C19D223D500E01EB3 /* TCDCharityViewController.h */,
+				ABD5848D19D223D500E01EB3 /* TCDCharityViewController.m */,
 				30B5586419728D48007C4F80 /* TCDContactsViewController.h */,
 				30B5586519728D48007C4F80 /* TCDContactsViewController.m */,
 				30B5586A19729BED007C4F80 /* TCDPhotoViewController.h */,
@@ -211,7 +221,6 @@
 				ABCADB1719ACF70B00E327B2 /* Model */,
 				ABCADB1619ACF67B00E327B2 /* Parser */,
 				30B558791972CA06007C4F80 /* Cells */,
-				30B558771972B6DF007C4F80 /* Photo.plist */,
 				30B5584419728683007C4F80 /* Images.xcassets */,
 				30B5583319728683007C4F80 /* Supporting Files */,
 			);
@@ -261,6 +270,8 @@
 		30B558791972CA06007C4F80 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AB85B61719E6FA2900A0D224 /* TCDContactCollectionViewCell.h */,
+				AB85B61819E6FA2900A0D224 /* TCDContactCollectionViewCell.m */,
 				30B5587A1972CA25007C4F80 /* TCDPhotoCollectionViewCell.h */,
 				30B5587B1972CA25007C4F80 /* TCDPhotoCollectionViewCell.m */,
 				ABCADB1E19AD098A00E327B2 /* TCDPhotoCollectionViewHeader.h */,
@@ -305,8 +316,19 @@
 				ABCADB1919ACF72700E327B2 /* TCDPhoto.m */,
 				ABCADB1B19ACF83400E327B2 /* TCDPhotoAlbum.h */,
 				ABCADB1C19ACF83400E327B2 /* TCDPhotoAlbum.m */,
+				AB85B61419E6EB5D00A0D224 /* TCDContact.h */,
+				AB85B61519E6EB5D00A0D224 /* TCDContact.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		DE4BFEA76992087C4E87027E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				784FECF4EFDA60041FB32655 /* Pods.debug.xcconfig */,
+				1757E03BD9F7844E02329D7E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,9 +381,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dmitri Doroschuk";
 				TargetAttributes = {
-					30B5582819728683007C4F80 = {
-						DevelopmentTeam = 6TWG7MTXRP;
-					};
 					30B5584919728683007C4F80 = {
 						TestTargetID = 30B5582819728683007C4F80;
 					};
@@ -394,7 +413,6 @@
 				30B5584519728683007C4F80 /* Images.xcassets in Resources */,
 				30B5583719728683007C4F80 /* InfoPlist.strings in Resources */,
 				30B5584019728683007C4F80 /* Main.storyboard in Resources */,
-				30B558781972B6DF007C4F80 /* Photo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -465,7 +483,10 @@
 				30BC36C319803AF00098F43F /* EXPhotoViewer.m in Sources */,
 				ABCADB1A19ACF72700E327B2 /* TCDPhoto.m in Sources */,
 				ABCADB1519ACF63E00E327B2 /* TCDParser.m in Sources */,
+				AB85B61919E6FA2900A0D224 /* TCDContactCollectionViewCell.m in Sources */,
+				ABD5848E19D223D500E01EB3 /* TCDCharityViewController.m in Sources */,
 				30B5587F19732584007C4F80 /* TCDMainViewController.m in Sources */,
+				AB85B61619E6EB5D00A0D224 /* TCDContact.m in Sources */,
 				30B5586319728B51007C4F80 /* TCDMenuViewController.m in Sources */,
 				30B5586619728D48007C4F80 /* TCDContactsViewController.m in Sources */,
 				30BC36AE197ADFAF0098F43F /* TCDCrewViewController.m in Sources */,
@@ -592,17 +613,17 @@
 		};
 		30B5585C19728683007C4F80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E49EBAAAF84759A864418E /* Pods.xcconfig */;
+			baseConfigurationReference = 784FECF4EFDA60041FB32655 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dmitry Doroschuk (45UEWVZN63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dmitry Doroschuk (45UEWVZN63)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "74096D57-3EC7-40EE-8C6E-95C2577C1CBE";
+				PROVISIONING_PROFILE = "094d1475-b285-43d6-8109-b3ef06d586ac";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -610,18 +631,18 @@
 		};
 		30B5585D19728683007C4F80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E49EBAAAF84759A864418E /* Pods.xcconfig */;
+			baseConfigurationReference = 1757E03BD9F7844E02329D7E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dmitry Doroschuk (45UEWVZN63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dmitry Doroschuk (45UEWVZN63)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZooHostel/ZooHostel-Prefix.pch";
 				INFOPLIST_FILE = "ZooHostel/ZooHostel-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "74096D57-3EC7-40EE-8C6E-95C2577C1CBE";
+				PROVISIONING_PROFILE = "094d1475-b285-43d6-8109-b3ef06d586ac";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

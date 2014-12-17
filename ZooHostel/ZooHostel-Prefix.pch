@@ -16,6 +16,7 @@
     #import "TCDScrollableViewController.h"
     #import "UIScrollView+TCDExtention.h"
     #import <RESideMenu/RESideMenu.h>
+    #import "TCDSideMenu.h"
     #import <UIViewController+RESideMenu.h>
     #import <libextobjc/EXTScope.h>
     #import <libextobjc/EXTSynthesize.h>

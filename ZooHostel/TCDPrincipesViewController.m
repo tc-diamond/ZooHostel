@@ -21,12 +21,13 @@ NSString * const TCDPrincipesViewControllerSegueIdentifier = @"PrincipesSegueIde
 {
     if([scrollView scrolledToBottom])
     {
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Условия приема" style:UIBarButtonItemStylePlain target:self action:@selector(terms)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Условия" style:UIBarButtonItemStylePlain target:self action:@selector(terms)];
     }
 }
 
 - (void)terms
 {
+    [((TCDSideMenu *)self.sideMenuViewController) nextTableSelection];
     self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDTermsViewControllerIdentifier];
 }
 

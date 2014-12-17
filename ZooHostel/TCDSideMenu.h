@@ -10,4 +10,6 @@
 
 @interface TCDSideMenu : RESideMenu
 
+- (void)nextTableSelection;
+
 @end

@@ -8,12 +8,11 @@
 
 #import "TCDProgramTypesViewController.h"
 #import "TCDCrewViewController.h"
-#import <RESideMenu/RESideMenu.h>
 #import <TTTAttributedLabel/TTTAttributedLabel.h>
 
 NSString * const TCDProgramTypesViewControllerIdentifier = @"ProgramTypesSegueIdentifier";
 
-@interface TCDProgramTypesViewController ()
+@interface TCDProgramTypesViewController () <UIActionSheetDelegate, TTTAttributedLabelDelegate>
 
 @property (weak, nonatomic) IBOutlet TTTAttributedLabel *contactVKLabel;
 
@@ -26,7 +25,8 @@ NSString * const TCDProgramTypesViewControllerIdentifier = @"ProgramTypesSegueId
     [super viewDidLoad];
     
     NSRange range = [self.contactVKLabel.text rangeOfString:@"группе вконтакте"];
-    [self.contactVKLabel addLinkToURL:[NSURL URLWithString:@"http://vk.com/topic-23223779_28952848"] withRange:range];
+    self.contactVKLabel.delegate = self;
+    [self.contactVKLabel addLinkToURL:[NSURL URLWithString:@"https://vk.com/topic-23223779_28952848"] withRange:range];
     // Do any additional setup after loading the view.
 }
 
@@ -40,7 +40,25 @@ NSString * const TCDProgramTypesViewControllerIdentifier = @"ProgramTypesSegueId
 
 - (void)crew
 {
+    [((TCDSideMenu *)self.sideMenuViewController) nextTableSelection];
     self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDCrewViewControllerIdentifier];
+}
+
+#pragma mark - TTTAttributedLabelDelegate
+
+- (void)attributedLabel:(__unused TTTAttributedLabel *)label
+   didSelectLinkWithURL:(NSURL *)url {
+    [[[UIActionSheet alloc] initWithTitle:@"Группа Зоогостиницы Дача-Удача в vk.com" delegate:self cancelButtonTitle:@"Отмена" destructiveButtonTitle:nil otherButtonTitles:@"Открыть в Safari", nil] showInView:self.view];
+}
+
+#pragma mark - UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        return;
+    }
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:actionSheet.title]];
 }
 
 @end

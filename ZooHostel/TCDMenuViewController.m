@@ -6,23 +6,22 @@
 //  Copyright (c) 2014 Dmitri Doroschuk. All rights reserved.
 //
 
+#import "TCDAboutUsViewController.h"
+#import "TCDCharityViewController.h"
+#import "TCDContactsViewController.h"
+#import "TCDCrewViewController.h"
 #import "TCDMenuViewController.h"
 #import "TCDProgramTypesViewController.h"
-#import "TCDCrewViewController.h"
 #import "TCDMainViewController.h"
-#import "TCDAboutUsViewController.h"
 #import "TCDPrincipesViewController.h"
-#import "TCDContactsViewController.h"
 #import "TCDPhotoViewController.h"
+#import "TCDTermsViewController.h"
 #import "UIViewController+ReSideMenu.h"
 #import <RESideMenu/RESideMenu.h>
-
-static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
 
 @interface TCDMenuViewController () <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-//@property (strong, nonatomic) UIImageView *headerImageView;
 @property (assign, nonatomic) CGFloat headerImageYOffset;
 @property (copy, nonatomic) NSArray *dataSource;
 @property (copy, nonatomic) NSArray *seguesSource;
@@ -38,13 +37,21 @@ static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
 {
     [super viewDidLoad];
     
-    self.dataSource = @[@"Главная", @"О нас", @"Виды путевок", @"Наша команда", @"Наши принципы", @"Условия приема", @"Контакты", @"Фотографии"];
-    self.seguesSource = @[kMainSegueIdentifier, TCDAboutUsViewControllerIdentifier, TCDProgramTypesViewControllerIdentifier, TCDCrewViewControllerIdentifier, TCDPrincipesViewControllerSegueIdentifier, kTermsSegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
+    self.dataSource = @[@"Главная", @"О нас", @"Виды путевок", @"Наша команда", @"Наши принципы", @"Условия приема", @"Социальная программа", @"Контакты", @"Фотографии"];
+    self.seguesSource = @[kMainSegueIdentifier, TCDAboutUsViewControllerIdentifier, TCDProgramTypesViewControllerIdentifier, TCDCrewViewControllerIdentifier, TCDPrincipesViewControllerSegueIdentifier, TCDTermsViewControllerIdentifier, TCDCharitySegueIdentifier, kContactsSegueIdentifier, kPhotoSegueIdentifier];
     
     self.selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView reloadData];
     CGFloat topInset = (self.view.bounds.size.height - self.tableView.contentSize.height) / 2;
     self.tableView.contentInset = UIEdgeInsetsMake(topInset, 0, 0, 0);
+}
+
+#pragma mark - Actions
+
+- (void)selectNext
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row + 1 inSection:indexPath.section] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 #pragma mark - UITableView
@@ -79,31 +86,5 @@ static NSString * const kTermsSegueIdentifier = @"TermsSegueIdentifier";
     self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.seguesSource[indexPath.row]];
     [self.sideMenuViewController hideMenuViewController];
 }
-
-#pragma mark - UIScrollViewDelegate
-
-//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    CGFloat scrollOffset = scrollView.contentOffset.y;
-//    CGRect headerImageFrame = self.headerImageView.frame;
-//    
-//    if (scrollOffset <= -70) {
-//        scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, -70);
-//        return;
-//    }
-//    
-//    // Adjust image proportionally
-//    headerImageFrame.origin.y = self.headerImageYOffset - scrollOffset / 3;
-//    
-//    self.headerImageView.frame = headerImageFrame;
-//}
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    
-}
-
 
 @end

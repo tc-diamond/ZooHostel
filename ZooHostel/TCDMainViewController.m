@@ -12,10 +12,6 @@
 
 NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 
-@interface TCDMainViewController ()
-
-@end
-
 @implementation TCDMainViewController
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -36,6 +32,7 @@ NSString * const kMainSegueIdentifier = @"MainSegueIdentifier";
 
 - (void)aboutUs
 {
+    [((TCDSideMenu *)self.sideMenuViewController) nextTableSelection];
     self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDAboutUsViewControllerIdentifier];
 }
 

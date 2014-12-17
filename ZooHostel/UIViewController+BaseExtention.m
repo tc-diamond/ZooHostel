@@ -49,6 +49,9 @@
     if ([NSStringFromClass([self class]) isEqualToString:@"TCDMenuViewController"]) {
         return;
     }
+    
+    [self configureNavBar];
+    
     UIScrollView *scrollView;
     
     if ([self respondsToSelector:NSSelectorFromString(@"scrollView")]) {
@@ -62,16 +65,23 @@
         
         //    CGSize *backgroundSize = CGSizeMake(self.scrollView.contentSize.width, <#CGFloat height#>)
         
-        CGFloat scrollHeight = scrollView.bounds.size.height;
+        CGFloat scrollHeight = self.view.bounds.size.height;
         self.backgroundImageView = [[UIImageView alloc]
                                     initWithFrame:CGRectMake(0,
                                                              0,
-                                                             scrollView.bounds.size.width,
-                                                             scrollHeight + (scrollView.bounds.size.height - scrollHeight) / 2)];
+                                                             self.view.bounds.size.width,
+                                                             scrollHeight + (self.view.bounds.size.height - scrollHeight) / 2)];
         self.backgroundImageView.image = image;
+        self.backgroundImageView.backgroundColor = [UIColor yellowColor];
+        self.backgroundImageView.contentMode = UIViewContentModeScaleToFill;
         //    self.backgroundView.blurRadius = 35;
         [self.view insertSubview:self.backgroundImageView atIndex:0];
     }
+}
+
+- (void)configureNavBar
+{
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 #pragma mark - UIScrollViewDelegate

@@ -73,7 +73,8 @@
 {
     if (self.itemsAreSections)
     {
-        return [self.items[section] count];
+        NSUInteger itemsCount = [self.items[section] count];
+        return itemsCount;
     }
     else
     {
@@ -104,32 +105,38 @@
     return cell;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *reuseIdentifier;
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader])
-    {
-        reuseIdentifier = self.headerIdentifier;
-    }
-    else
-    {
-        reuseIdentifier = self.footerIdentifier;
-    }
-    
-    UICollectionReusableView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    id item = [self itemAtIndexPath:indexPath];
-    
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader])
-    {
-        self.configureHeaderBlock(reusableView, item);
-    }
-    else
-    {
-        self.configureFooterBlock(reusableView, item);
-    }
-    
-    return reusableView;
-}
+
+
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSString *reuseIdentifier;
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader])
+//    {
+//        reuseIdentifier = self.headerIdentifier;
+//    }
+//    else
+//    {
+//        reuseIdentifier = self.footerIdentifier;
+//    }
+//    
+//    if (!reuseIdentifier) {
+//        return nil;
+//    }
+//    
+//    UICollectionReusableView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+//    
+//    id item = [self itemAtIndexPath:indexPath];
+//    
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader])
+//    {
+//        self.configureHeaderBlock(reusableView, item);
+//    }
+//    else
+//    {
+//        self.configureFooterBlock(reusableView, item);
+//    }
+//    
+//    return reusableView;
+//}
 
 @end

@@ -16,6 +16,7 @@
 #import "TCDPhotoViewController.h"
 #import <RESideMenu/RESideMenu.h>
 #import <UIImageView+AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
 
 NSString * const kPhotoSegueIdentifier = @"PhotoSegueIdentifier";
 static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.megagroup.ru/d/683110/d/photos.txt";
@@ -33,24 +34,31 @@ static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.meg
 {
     [super viewDidLoad];
     
-    NSString *parsingString = [NSString stringWithContentsOfURL:[NSURL URLWithString:TCDPhotoViewControllerPhotosURLString] encoding:NSUTF8StringEncoding error:nil];
-    NSArray *photoAlbums = [TCDParser parseStringToPhotoAlbums:parsingString];
+    [SVProgressHUD show];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *parsingString = [NSString stringWithContentsOfURL:[NSURL URLWithString:TCDPhotoViewControllerPhotosURLString] encoding:NSUTF8StringEncoding error:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self fillWithParsingString:parsingString];
+        });
+    });
+}
+
+- (void)fillWithParsingString:(NSString *)parsingString
+{
+    NSArray *photos = [TCDParser photosFromParsingString:parsingString];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Photo" ofType:@"plist"];
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
-    NSArray *dataSource = [NSArray arrayWithArray:[dict allValues]];
-    self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:photoAlbums itemsAreSections:YES cellIdentifier:@"Cell" headerIdentifier:@"Header" footerIdentifier:nil configureCellBlock:^(TCDPhotoCollectionViewCell *cell, TCDPhoto *photo) {
-        [cell.imageView setImageWithURL:photo.presentationUrl];
-    } configureHeaderBlock:^(TCDPhotoCollectionViewHeader *cell, TCDPhotoAlbum *photoAlbum) {
-        cell.titleLabel.text = photoAlbum.title;
-    } configureFooterBlock:nil];
-    self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:dataSource cellIdentifier:@"Cell" configureCellBlock:^(TCDPhotoCollectionViewCell *cell, id item) {
-        cell.imageView.image = [UIImage imageNamed:item];
+    
+    self.arrayDataSource = [[ArrayDataSource alloc]initWithItems:photos cellIdentifier:@"Cell" configureCellBlock:^(TCDPhotoCollectionViewCell *cell, TCDPhoto *photo) {
+        [cell.imageView setImageWithURL:photo.url];
+        cell.contentView.frame = cell.bounds;
     }];
     self.collectionView.dataSource = self.arrayDataSource;
     
-    self.arrayDelegate = [[ArrayDelegate alloc]initWithDataSource:self.arrayDataSource sizeBlock:^CGSize(TCDPhotoCollectionViewCell *cell, id item, UICollectionView *collectionView, UICollectionViewFlowLayout *collectionViewLayout, NSIndexPath *indexPath) {
-        UIImage *image = [UIImage imageNamed:item];
+    self.arrayDelegate = [[ArrayDelegate alloc]initWithDataSource:self.arrayDataSource sizeBlock:^CGSize(TCDPhotoCollectionViewCell *cell, TCDPhoto *item, UICollectionView *collectionView, UICollectionViewFlowLayout *collectionViewLayout, NSIndexPath *indexPath) {
+        
+        if (indexPath.item == 16) {
+            NSLog(@"break");
+        }
         
         NSInteger nearestIndex = -1;//one in a row
         if (indexPath.item % 2 == 0 ) {
@@ -65,10 +73,10 @@ static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.meg
         
         if (nearestIndex >= self.arrayDataSource.items.count) {
             //out of items array
-            size = CGSizeMake(collectionView.bounds.size.width, image.size.height * collectionView.bounds.size.width / image.size.width);
+            size = CGSizeMake(collectionView.bounds.size.width, item.size.height * collectionView.bounds.size.width / item.size.width);
         } else {
-            UIImage *nearestImage = [UIImage imageNamed:self.arrayDataSource.items[nearestIndex]];
-            CGSize currImageSize = image.size;
+            TCDPhoto *nearestImage = [self.arrayDataSource.items objectAtIndex:nearestIndex];
+            CGSize currImageSize = item.size;
             CGSize nearestImageSize = nearestImage.size;
             CGFloat heightDiff = nearestImage.size.height / currImageSize.height;
             nearestImageSize.width /= heightDiff;
@@ -77,27 +85,17 @@ static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.meg
             CGFloat sumWidth = currImageSize.width + nearestImageSize.width;
             CGFloat scale = sumWidth / collectionView.bounds.size.width;
             currImageSize.width = floorf(currImageSize.width);
-            size = CGSizeMake(currImageSize.width / scale - 1, floorf(currImageSize.height / scale) - 1);
+            size = CGSizeMake(floorf(currImageSize.width  / scale) - 1,
+                              floorf(currImageSize.height / scale) - 1);
         }
         
         return size;
     } selectBlock:^(TCDPhotoCollectionViewCell *cell, id item, UICollectionView *collectionView, NSIndexPath *indexPath) {
-//        self.photoGalleryViewController = [[UIPhotoGalleryViewController alloc]init];
-//        self.photoGalleryViewController.dataSource = self;
-//        self.photoGalleryViewController.showStatusBar = YES;
-//        self.photoGalleryViewController.initialIndex = indexPath.item;
-//        self.photoGalleryViewController.vPhotoGallery.initialIndex = indexPath.item;
-//        [self.navigationController pushViewController:self.photoGalleryViewController animated:YES];
+        
     }];
     self.collectionView.delegate = self.arrayDelegate;
-    // Do any additional setup after loading the view.
-}
-
-- (NSString*)pathWithFilename:(NSString*)name
-{
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@.plist", [NSBundle mainBundle], name];
     
-    return filePath;
+    [SVProgressHUD dismiss];
 }
 
 #pragma mark - Navigation
@@ -106,13 +104,5 @@ static NSString * const TCDPhotoViewControllerPhotosURLString = @"http://cp9.meg
 {
     [self.sideMenuViewController presentLeftMenuViewController];
 }
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-
 
 @end

@@ -7,11 +7,14 @@
 //
 
 #import "TCDSideMenu.h"
+#import "TCDMenuViewController.h"
 
 static NSString * const leftMenuVCIdentifier = @"TCDMenuViewController";
 static NSString * const contentMenuVCIdentifier = @"MainSegueIdentifier";
 
 @interface TCDSideMenu ()
+
+@property (nonatomic, weak) TCDMenuViewController *menuViewController;
 
 @end
 
@@ -27,12 +30,18 @@ static NSString * const contentMenuVCIdentifier = @"MainSegueIdentifier";
 {
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:contentMenuVCIdentifier];
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:leftMenuVCIdentifier];
+    self.menuViewController = (id)self.leftMenuViewController;
 
     self.backgroundImage = [UIImage imageNamed:@"menuBackground"];
 
     self.panFromEdge = YES;
     self.panGestureEnabled = YES;
     self.parallaxEnabled = YES;
+}
+
+- (void)nextTableSelection
+{
+    [self.menuViewController selectNext];
 }
 
 @end

@@ -18,12 +18,13 @@ NSString * const TCDCrewViewControllerIdentifier = @"CrewSegueIdentifier";
 {
     if([scrollView scrolledToBottom])
     {
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Наши принципы" style:UIBarButtonItemStylePlain target:self action:@selector(principes)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"Принципы" style:UIBarButtonItemStylePlain target:self action:@selector(principes)];
     }
 }
 
 - (void)principes
 {
+    [((TCDSideMenu *)self.sideMenuViewController) nextTableSelection];
     self.sideMenuViewController.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:TCDPrincipesViewControllerSegueIdentifier];
 }
 
